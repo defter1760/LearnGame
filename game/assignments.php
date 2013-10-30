@@ -86,7 +86,7 @@ if($typeint == '2')
     $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
     while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
     {
-        $answers[]= $line['description'];
+        $answers[]= $line['command'];
     }
     
     $a= $answers['1'];
