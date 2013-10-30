@@ -1,6 +1,6 @@
 <?PHP
-echo 'Hello Werld!';
-echo date('d');
+echo 'Learn the ins and outs of Linux while playing a game!';
+echo date('d'.'M');
 
 echo '<table border=2 width="100%">';
     echo '<tr>';
