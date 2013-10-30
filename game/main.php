@@ -2,6 +2,12 @@
 require('checkpost.php');
 require('./game/score/getplayerscore.php');
 require('assignments.php');
+
+if($type == 'command')
+{
+    echo 'What does '.$question.' do?';
+}
+
 echo '<form method=post>';
     echo 'A) ';
     echo '<input type=hidden name=type value="'.$type.'">';
