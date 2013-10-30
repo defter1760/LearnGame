@@ -24,28 +24,28 @@
             ctx.textBaseline = "middle";
                      Textfadeup();        }
  
-          function Textfadeup() {
-            rgbstep++;
+        //  function Textfadeup() {
+        //    rgbstep++;
+        //    ctx.clearRect(0, 0, can.width, can.height);
+        //    ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
+        //    ctx.fillText("WELCOME", 150, 100);
+        //    if (rgbstep < 255)
+        //        var t = setTimeout('Textfadeup()', 10);
+        //    if (rgbstep == 255) {
+        //        Textfadedown();
+        //    }
+        //}
+        function Textfadedown() {
+rgbstep=rgbstep-1;
             ctx.clearRect(0, 0, can.width, can.height);
             ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
             ctx.fillText("WELCOME", 150, 100);
-            if (rgbstep < 255)
-                var t = setTimeout('Textfadeup()', 10);
-            if (rgbstep == 255) {
-                Textfadedown();
+            if (rgbstep > 80)
+                var t = setTimeout('Textfadedown()', 10);
+            if (rgbstep == 80) {
+                Textfadeup();
             }
-        }
-//        function Textfadedown() {
-//rgbstep=rgbstep-1;
-//            ctx.clearRect(0, 0, can.width, can.height);
-//            ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
-//            ctx.fillText("WELCOME", 150, 100);
-//            if (rgbstep > 80)
-//                var t = setTimeout('Textfadedown()', 10);
-//            if (rgbstep == 80) {
-//                Textfadeup();
-//            }
-//        }  
+        }  
     </script>
  
 </head>
