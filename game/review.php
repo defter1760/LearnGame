@@ -12,7 +12,7 @@
  
     <script type="text/javascript">
         var can, ctx, step = 50, steps = 255;
-              delay = 30;
+              delay = 130;
               var rgbstep = 50;
  
         function init() {
