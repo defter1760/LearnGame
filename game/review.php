@@ -23,7 +23,7 @@
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             Textfadeup();
-            setTimeout('location.reload(forceGet)', 10000);
+            
                              }
  
           function Textfadeup() {
@@ -43,10 +43,10 @@ rgbstep=rgbstep-1;
             ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
             ctx.fillText("WELCOME", 150, 100);
             if (rgbstep > 80)
-                var t = setTimeout('Textfadedown()', 30);
-            //if (rgbstep == 80) {
-            //    Textfadeup();
-            //}
+                var t = setTimeout('Textfadedown()', 6);
+            if (rgbstep == 80) {
+                setTimeout('location.reload(forceGet)', 5000);
+            }
         }  
     </script>
  
