@@ -1,7 +1,7 @@
 <?PHP
 
 require('mySQLconnect.php');
-    echo 'review';
+    #echo 'review';
         $query = "SELECT count(*) as COUNT FROM commands";
     $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
     while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
@@ -38,7 +38,7 @@ $commandselection = rand(1, $commandcount);
             can = document.getElementById("MyCanvas1");
             ctx= can.getContext("2d");
             ctx.fillStyle = "blue";
-            ctx.font = "40pt Helvetica";
+            ctx.font = "16pt Helvetica";
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             Textfadeup();
