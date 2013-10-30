@@ -2,7 +2,7 @@
 require('checkpost.php');
 require('./game/score/getplayerscore.php');
 require('assignments.php');
-
+echo '<br><br>';
 if($type == 'command')
 {
     echo 'What does '.$question.' do?';
