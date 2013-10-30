@@ -31,7 +31,7 @@ function longWordWrap($string) {
 <html>
 <head>
     <style>
-        canvas{border: 1px solid #bbb; width:720px;}
+        canvas{border: 1px solid #bbb; width:720px; height: 400px;}
         .subdiv{width: 300px;}
         .text{margin: auto; width: 10px;}
     </style>
@@ -46,7 +46,7 @@ function longWordWrap($string) {
             ctx= can.getContext("2d");
             ctx.fillStyle = "blue";
             ctx.font = "10pt Helvetica";
-            ctx.textAlign = "center";
+            ctx.textAlign = "left";
             ctx.textBaseline = "middle";
             Textfadeup();
             
