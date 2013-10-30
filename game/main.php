@@ -5,7 +5,7 @@ require('assignments.php');
 echo '<form method=post>';
     echo 'A) ';
     echo '<input type=hidden name=question value="'.$question.'">';
-    echo '<input type=submit name=answer value="'.$a.'"  style="background:none;border:0;color:#ff0000">';
+    echo '<input type=submit name=answer value="'.$a.'"  style="background:none;border:0;color:#000000">';
     echo '</form><br>';    
     echo 'B) '.$b;
     echo 'C) '.$c;
