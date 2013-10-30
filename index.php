@@ -38,7 +38,7 @@ echo '<table border=2 width="100%">';
             echo '<td>';
             echo '</td>';
             echo '<td>';
-                echo '[game]';
+                require('./game/main.php');
             echo '</td>';
             echo '<td >';
                 require('./ads/LGRightBar.php');
