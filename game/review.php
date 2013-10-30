@@ -46,7 +46,7 @@ function longWordWrap($string) {
             ctx= can.getContext("2d");
             ctx.fillStyle = "blue";
             ctx.font = "10pt Helvetica";
-            ctx.textAlign = "left";
+            ctx.textAlign = "center";
             ctx.textBaseline = "left";
             Textfadeup();
             
