@@ -9,7 +9,7 @@ if($type == 'command')
 }
 if($type == 'reversecommand')
 {
-    echo 'Which command "'.$question.'" ?';
+    echo 'Choose the correct command: "'.$question.'" ?';
 }
 echo '<form method=post>';
     echo 'A) ';
