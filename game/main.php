@@ -5,7 +5,7 @@ require('assignments.php');
 echo '<br><br>';
 if($type == 'command')
 {
-    echo 'What does '.$question.' do?';
+    echo 'What does "'.$question.'" do?';
 }
 
 echo '<form method=post>';
