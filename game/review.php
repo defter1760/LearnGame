@@ -41,10 +41,10 @@ rgbstep=rgbstep-1;
             ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
             ctx.fillText("WELCOME", 150, 100);
             if (rgbstep > 80)
-                var t = setTimeout('Textfadedown()', 20);
-            if (rgbstep == 80) {
-                Textfadeup();
-            }
+                var t = setTimeout('Textfadedown()', 30);
+            //if (rgbstep == 80) {
+            //    Textfadeup();
+            //}
         }  
     </script>
  
