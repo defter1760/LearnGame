@@ -6,11 +6,12 @@ if($typeint == '1')
 {
     $type = 'command';
 
-    $query = "SELECT count(*) FROM commands";
+    $query = "SELECT count(*) as COUNT
+		FROM commands as";
     $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
     while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
     {
-        $commandcount= $line['count'];
+        $commandcount= $line['COUNT'];
     }
     echo 'COUNT:';
 echo $commandcount;    
