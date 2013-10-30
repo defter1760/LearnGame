@@ -45,7 +45,7 @@ rgbstep=rgbstep-1;
             if (rgbstep > 80)
                 var t = setTimeout('Textfadedown()', 6);
             if (rgbstep == 80) {
-                setTimeout('location.reload(forceGet)', 5000);
+                window.setTimeout(function(){location.reload()},3000);
             }
         }  
     </script>
