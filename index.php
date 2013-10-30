@@ -6,6 +6,7 @@ echo '<table border=2 width="100%">';
     echo '<tr>';
         echo '<td width="200px">';
         echo '</td>';
+            echo '[review] [game]';
         echo '<td>';
         echo '</td>';
         echo '<td width="200px">';
