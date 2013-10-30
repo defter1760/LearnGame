@@ -1,4 +1,5 @@
 <?PHP
+$type = 'type';
 $question = 'question';
     $a = 'a';
     $b = 'b';
