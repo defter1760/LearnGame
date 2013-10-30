@@ -22,6 +22,7 @@
             ctx.font = "40pt Helvetica";
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
+            setTimeout(continueExecution, 10000);
                      Textfadeup();        }
  
           function Textfadeup() {
@@ -41,7 +42,7 @@ rgbstep=rgbstep-1;
             ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
             ctx.fillText("WELCOME", 150, 100);
             if (rgbstep > 80)
-                var t = setTimeout('Textfadedown()', 30);
+                var t = setTimeout('Textfadedown()', 130);
             //if (rgbstep == 80) {
             //    Textfadeup();
             //}
