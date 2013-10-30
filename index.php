@@ -37,7 +37,7 @@ echo '<table border=2 width="100%">';
         echo '<tr height="600px">';
             echo '<td>';
             echo '</td>';
-            echo '<td>';
+            echo '<td valign="top">';
                 require('./game/main.php');
             echo '</td>';
             echo '<td >';
