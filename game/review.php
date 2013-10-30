@@ -25,8 +25,8 @@ $commandselection = rand(1, $commandcount);
 <head>
     <style>
         canvas{border: 0px solid #bbb;}
-        .subdiv{width: 320px;}
-        .text{margin: auto; width: 290px;}
+        .subdiv{width: 600px;}
+        .text{margin: auto; width: 20px;}
     </style>
  
     <script type="text/javascript">
