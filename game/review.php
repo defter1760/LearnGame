@@ -18,7 +18,14 @@ $commandselection = rand(1, $commandcount);
         $question= $line['command'];
         $answer= $line['description'];
     }
-
+function longWordWrap($string) {
+    $string = str_replace("\n", "\n ", $string); // add a space after newline characters, so that 2 words only seperated by \n are not considered as 1 word
+    $words = explode(" ", $string); // now split by space
+    foreach ($words as $word) {
+        $outstring .= chunk_split($word, 12, " ") . " ";
+    }
+    return $outstring;
+}
 ?>
 
 <html>
@@ -50,7 +57,7 @@ $commandselection = rand(1, $commandcount);
             ctx.clearRect(0, 0, can.width, can.height);
             ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
 <?PHP
-            echo 'ctx.fillText("'.$answer.'", 150, 100);';
+            echo 'ctx.fillText("'.longWordWrap($answer).'", 150, 100);';
 ?>
             //if (rgbstep < 255)
                 //var t = setTimeout('Textfadeup()', 10);
@@ -63,7 +70,7 @@ rgbstep=rgbstep-1;
             ctx.clearRect(0, 0, can.width, can.height);
             ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
 <?PHP
-            echo 'ctx.fillText("'.$answer.'", 150, 100);';
+            echo 'ctx.fillText("'.longWordWrap($answer).'", 150, 100);';
 ?>
             if (rgbstep > 80)
                 var t = setTimeout('Textfadedown()', 6);
