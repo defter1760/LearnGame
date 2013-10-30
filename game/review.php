@@ -22,7 +22,7 @@
             ctx.font = "40pt Helvetica";
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
-            setTimeout(Textfadeup(),125000000000);
+            Textfadeup();
                              }
  
           function Textfadeup() {
@@ -33,7 +33,7 @@
             //if (rgbstep < 255)
                 //var t = setTimeout('Textfadeup()', 10);
             //if (rgbstep == 255) {
-                Textfadedown();
+                setTimeout('Textfadedown()', 50000);
             //}
         }
         function Textfadedown() {
