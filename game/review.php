@@ -22,8 +22,8 @@
             ctx.font = "40pt Helvetica";
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
-            setTimeout(continueExecution, 10000);
-                     Textfadeup();        }
+            setTimeout(Textfadeup(), 5000);
+                             }
  
           function Textfadeup() {
             rgbstep = 255;
