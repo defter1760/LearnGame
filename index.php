@@ -41,5 +41,15 @@ echo '<table border=2 width="100%">';
             echo '<td >';
                 echo '[ad]';            
             echo '</td>';
+    echo '</tr>';
+    echo '</tr>';
+        echo '<tr height="90px">';
+            echo '<td>';
+            echo '</td>';
+            echo '<td>';
+                echo '[ad]';
+            echo '</td>';
+            echo '<td >';
+            echo '</td>';
     echo '</tr>';    
 ?>
