@@ -1,6 +1,6 @@
 <?PHP
 require('./checkpost.php');
-require('./';)
+require('./assignments.php')
 echo '<form method=post>';
     echo '<input type=hidden name=question value="'.$question.'">';
     echo '<input type=submit name=answer value="'.$a.'">';
