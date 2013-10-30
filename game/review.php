@@ -4,7 +4,6 @@
 
 <html>
 <head>
-    <title>Text fade in – fade out Animation</title>
     <style>
         canvas{border: 1px solid #bbb;}
         .subdiv{width: 320px;}
@@ -36,17 +35,17 @@
                 Textfadedown();
             }
         }
-        function Textfadedown() {
-rgbstep=rgbstep-1;
-            ctx.clearRect(0, 0, can.width, can.height);
-            ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
-            ctx.fillText("WELCOME", 150, 100);
-            if (rgbstep > 80)
-                var t = setTimeout('Textfadedown()', 10);
-            if (rgbstep == 80) {
-                Textfadeup();
-            }
-        }  
+//        function Textfadedown() {
+//rgbstep=rgbstep-1;
+//            ctx.clearRect(0, 0, can.width, can.height);
+//            ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
+//            ctx.fillText("WELCOME", 150, 100);
+//            if (rgbstep > 80)
+//                var t = setTimeout('Textfadedown()', 10);
+//            if (rgbstep == 80) {
+//                Textfadeup();
+//            }
+//        }  
     </script>
  
 </head>
