@@ -25,7 +25,7 @@ $commandselection = rand(1, $commandcount);
 <head>
     <style>
         canvas{border: 0px solid #bbb;}
-        .subdiv{width: 600px;}
+        .subdiv{width: 728px;}
         .text{margin: auto; width: 20px;}
     </style>
  
@@ -38,7 +38,7 @@ $commandselection = rand(1, $commandcount);
             can = document.getElementById("MyCanvas1");
             ctx= can.getContext("2d");
             ctx.fillStyle = "blue";
-            ctx.font = "16pt Helvetica";
+            ctx.font = "14pt Helvetica";
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             Textfadeup();
