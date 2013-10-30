@@ -12,7 +12,7 @@
  
     <script type="text/javascript">
         var can, ctx, step = 50, steps = 255;
-              delay = 20;
+              delay = 30;
               var rgbstep = 50;
  
         function init() {
@@ -24,17 +24,17 @@
             ctx.textBaseline = "middle";
                      Textfadedown();        }
  
-        //  function Textfadeup() {
-        //    rgbstep++;
-        //    ctx.clearRect(0, 0, can.width, can.height);
-        //    ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
-        //    ctx.fillText("WELCOME", 150, 100);
-        //    if (rgbstep < 255)
-        //        var t = setTimeout('Textfadeup()', 1);
-        //    if (rgbstep == 255) {
-        //        Textfadedown();
-        //    }
-        //}
+          function Textfadeup() {
+            rgbstep++;
+            ctx.clearRect(0, 0, can.width, can.height);
+            ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
+            ctx.fillText("WELCOME", 150, 100);
+            if (rgbstep < 255)
+                var t = setTimeout('Textfadeup()', 1);
+            if (rgbstep == 255) {
+                Textfadedown();
+            }
+        }
         function Textfadedown() {
 rgbstep=rgbstep-1;
             ctx.clearRect(0, 0, can.width, can.height);
