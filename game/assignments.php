@@ -1,7 +1,7 @@
 <?PHP
 $type = 'type';
-$question = 'question';
-    $a = 'a';
+$question = 'cp';
+    $a = 'copy a file';
     $b = 'b';
     $c = 'c';
     $d = 'd';
