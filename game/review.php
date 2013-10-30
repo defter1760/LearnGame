@@ -47,7 +47,7 @@ function longWordWrap($string) {
             ctx.fillStyle = "blue";
             ctx.font = "10pt Helvetica";
             ctx.textAlign = "center";
-            ctx.textBaseline = "left";
+            ctx.textBaseline = "middle";
             Textfadeup();
             
                              }
