@@ -8,7 +8,7 @@ $submitted_question = $_POST['question'];
 
 if($submitted_type == 'command')
 {
-    $query = 'SELECT description FROM commands where command='.$submitted_question;
+    $query = "SELECT description FROM commands where command='".$submitted_question."'";
     $result = mysql_query($query) or die('Query failed: ' . mysql_error());
     
     while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
