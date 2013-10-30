@@ -22,19 +22,19 @@
             ctx.font = "40pt Helvetica";
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
-                     Textfadeup();        }
+                     Textfadedown();        }
  
-          function Textfadeup() {
-            rgbstep++;
-            ctx.clearRect(0, 0, can.width, can.height);
-            ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
-            ctx.fillText("WELCOME", 150, 100);
-            if (rgbstep < 255)
-                var t = setTimeout('Textfadeup()', 1);
-            if (rgbstep == 255) {
-                Textfadedown();
-            }
-        }
+        //  function Textfadeup() {
+        //    rgbstep++;
+        //    ctx.clearRect(0, 0, can.width, can.height);
+        //    ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
+        //    ctx.fillText("WELCOME", 150, 100);
+        //    if (rgbstep < 255)
+        //        var t = setTimeout('Textfadeup()', 1);
+        //    if (rgbstep == 255) {
+        //        Textfadedown();
+        //    }
+        //}
         function Textfadedown() {
 rgbstep=rgbstep-1;
             ctx.clearRect(0, 0, can.width, can.height);
