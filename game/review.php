@@ -22,7 +22,7 @@
             ctx.font = "40pt Helvetica";
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
-            setTimeout(Textfadeup(), 10000);
+            setTimeout(Textfadeup(),125000000000);
                              }
  
           function Textfadeup() {
