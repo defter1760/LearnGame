@@ -23,6 +23,7 @@
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             Textfadeup();
+            setTimeout('location.reload(forceGet)', 10000);
                              }
  
           function Textfadeup() {
