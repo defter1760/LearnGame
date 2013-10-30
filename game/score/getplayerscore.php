@@ -1,3 +1,3 @@
 <?PHP
-    echo 'getplayerscore';
+    echo ' ## getplayerscore';
 ?>
