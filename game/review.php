@@ -25,7 +25,7 @@
                      Textfadeup();        }
  
           function Textfadeup() {
-            rgbstep++;
+            rgbstep = 255;
             ctx.clearRect(0, 0, can.width, can.height);
             ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
             ctx.fillText("WELCOME", 150, 100);
