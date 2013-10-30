@@ -38,7 +38,7 @@ $commandselection = rand(1, $commandcount);
             can = document.getElementById("MyCanvas1");
             ctx= can.getContext("2d");
             ctx.fillStyle = "blue";
-            ctx.font = "14pt Helvetica";
+            ctx.font = "10pt Helvetica";
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             Textfadeup();
