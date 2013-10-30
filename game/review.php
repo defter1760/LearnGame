@@ -1,11 +1,30 @@
 <?PHP
+
+require('mySQLconnect.php');
     echo 'review';
+        $query = "SELECT count(*) as COUNT FROM commands";
+    $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
+    while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+    {
+        $commandcount= $line['COUNT'];
+    }
+
+$commandselection = rand(1, $commandcount);
+
+    $query = "SELECT * FROM commands where id='".$commandselection."'";
+    $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
+    while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+    {
+        $question= $line['command'];
+        $answer= $line['description'];
+    }
+
 ?>
 
 <html>
 <head>
     <style>
-        canvas{border: 1px solid #bbb;}
+        canvas{border: 0px solid #bbb;}
         .subdiv{width: 320px;}
         .text{margin: auto; width: 290px;}
     </style>
@@ -30,7 +49,9 @@
             rgbstep = 255;
             ctx.clearRect(0, 0, can.width, can.height);
             ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
-            ctx.fillText("WELCOME", 150, 100);
+<?PHP
+            echo 'ctx.fillText("'.$answer.'", 150, 100);';
+?>
             //if (rgbstep < 255)
                 //var t = setTimeout('Textfadeup()', 10);
             //if (rgbstep == 255) {
@@ -41,17 +62,22 @@
 rgbstep=rgbstep-1;
             ctx.clearRect(0, 0, can.width, can.height);
             ctx.fillStyle = "rgb(" + rgbstep + "," + rgbstep + "," + rgbstep + ")"
-            ctx.fillText("WELCOME", 150, 100);
+<?PHP
+            echo 'ctx.fillText("'.$answer.'", 150, 100);';
+?>
             if (rgbstep > 80)
                 var t = setTimeout('Textfadedown()', 6);
             if (rgbstep == 80) {
-                window.setTimeout(function(){location.reload()},3000);
+                window.setTimeout(function(){location.reload()},5000);
             }
         }  
     </script>
  
 </head>
 <body onload="init();">
+<?PHP
+    echo 'What does "'.$question.'" do?';
+?>
     <div class="subdiv">
         <canvas id="MyCanvas1" width="300" height="200">
   This browser or document mode doesn't support canvas object</canvas>
