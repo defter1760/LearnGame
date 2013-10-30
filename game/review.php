@@ -33,7 +33,7 @@
             //if (rgbstep < 255)
                 //var t = setTimeout('Textfadeup()', 10);
             //if (rgbstep == 255) {
-                setTimeout('Textfadedown()', 50000);
+                setTimeout('Textfadedown()', 5000);
             //}
         }
         function Textfadedown() {
