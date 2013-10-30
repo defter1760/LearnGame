@@ -1,5 +1,5 @@
 <?PHP
-$type = 'type';
+$type = 'command';
 $question = 'cp';
     $a = 'copy a file';
     $b = 'b';
