@@ -1,6 +1,6 @@
 <?PHP
 require('checkpost.php');
-require('../score/getplayerscore.php');
+require('./score/getplayerscore.php');
 require('assignments.php');
 echo '<form method=post>';
     echo '<input type=hidden name=question value="'.$question.'">';
