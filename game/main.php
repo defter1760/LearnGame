@@ -7,7 +7,10 @@ if($type == 'command')
 {
     echo 'What does "'.$question.'" do?';
 }
-
+if($type == 'reversecommand')
+{
+    echo 'Which command will "'.$question.'" ?';
+}
 echo '<form method=post>';
     echo 'A) ';
     echo '<input type=hidden name=type value="'.$type.'">';
