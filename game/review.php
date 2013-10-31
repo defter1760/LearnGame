@@ -33,7 +33,7 @@ function longWordWrap($string) {
     <style>
         canvas{border: 0px solid #bbb; width:700px;}
         .subdiv{width: 720px;}
-        .text{margin: auto; width: 10px;}
+        .text{margin: auto;}
     </style>
  
     <script type="text/javascript">
