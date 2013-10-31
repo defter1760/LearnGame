@@ -37,20 +37,27 @@ function longWordWrap($string) {
     </style>
  
     <script type="text/javascript">
+
         var can, ctx, step = 50, steps = 255;
               delay = 130;
               var rgbstep = 50;
  
         function init() {
-            can = document.getElementById("MyCanvas1");
-            ctx= can.getContext("2d");
-            ctx.fillStyle = "blue";
-            ctx.font = "40pt Helvetica";
-            ctx.textAlign = "center";
-            ctx.textBaseline = "middle";
-            Textfadeup();
+            //can = document.getElementById("MyCanvas1");
+            //ctx= can.getContext("2d");
+            //ctx.fillStyle = "blue";
+            //ctx.font = "40pt Helvetica";
+            //ctx.textAlign = "center";
+            //ctx.textBaseline = "middle";
+            setTimeout('answer()', 5000);
+            //Textfadeup();
             
                              }
+                             
+        function answer() {
+                var el = document.getElementById('insertHere');
+                el.html = '<div>Print this after the script tag</div>';
+        }
  
           function Textfadeup() {
             rgbstep = 255;
@@ -82,6 +89,8 @@ rgbstep=rgbstep-1;
  <title>
     <?PHP
         echo 'What does "'.$question.'" do?';
+        echo '<br><br>';
+        echo '<span id="insertHere"></span>';
     ?>
  </title>
 </head>
