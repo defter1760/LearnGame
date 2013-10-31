@@ -123,7 +123,7 @@ if ($_SESSION['loggedIn']):
                 <tr>
                     <td>
                         <?PHP
-			    echo 'Logged in as: <b>'.$_SESSION['UserName'].'</b>;
+			    echo 'Logged in as: <b>'.$_SESSION['UserName'].'</b>';
 			?>
                     </td>
                 </tr>
