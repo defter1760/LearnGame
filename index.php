@@ -14,7 +14,8 @@
     </style>
     <body>
 <?PHP
-require('./game/access.php');
+require('./game/head.php');
+
 #require('style.php');
 //echo 'Learn the ins and outs of Linux while playing a game!';
 //echo date('M').' '.date('d').' '.date('Y');
@@ -27,7 +28,8 @@ echo '<table border=2 width="100%">';
         echo '<td>';
         echo '</td>';
         echo '<td width="200px">';
-            echo '[Login] [User] [*Pass]';
+            require('./game/access.php');
+            #echo '[Login] [User] [*Pass]';
         echo '</td>';
     echo '</tr>';
         echo '<tr height="90px">';

@@ -55,11 +55,11 @@ if (!$_SESSION['loggedIn']):
 //{
 //    echo 'Woof';
 //}
-require('head.php');
+
 ?>
 
 
-  <body>
+  <!--<body>-->
 	    <tr>
             <td>
 	    <form method="post">
@@ -110,8 +110,8 @@ require('head.php');
     </tr>
 </table>
 </form>
-  </body>
-</html>
+<!--  </body>
+</html>-->
 <?php
 #exit();
 endif;
