@@ -14,7 +14,7 @@
     </style>
     <body>
 <?PHP
-
+require('access.php');
 #require('style.php');
 echo 'Learn the ins and outs of Linux while playing a game!';
 echo date('M').' '.date('d').' '.date('Y');
