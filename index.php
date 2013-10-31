@@ -5,7 +5,7 @@ echo date('M').' '.date('d').' '.date('Y');
 echo '<table border=2 width="100%">';
     echo '<tr>';
         echo '<td width="200px">';
-            echo '<a href="in0.us/LearnGame?review=1">[review]</a> <a href="in0.us/LearnGame/">[game]</a>';
+            echo '<a href="http://in0.us/LearnGame?review=1">[review]</a> <a href="http://in0.us/LearnGame/">[game]</a>';
         echo '</td>';
         echo '<td>';
         echo '</td>';
