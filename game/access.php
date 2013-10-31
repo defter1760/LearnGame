@@ -106,9 +106,9 @@ if (!$_SESSION['loggedIn']):
                     </td>
                 </tr>
             </table>
-        </td>
+<!--        </td>
     </tr>
-</table>
+</table>-->
 </form>
 <!--  </body>
 </html>-->
