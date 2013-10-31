@@ -68,12 +68,12 @@ if (!$_SESSION['loggedIn']):
             <table>
 		<tr>
 		    <td>
-                        <h2>Automatically fire off job application emails at a specified hour of the day!</h2>
+                        <!--<h2></h2>-->
                     </td>
                 </tr>
                 <tr>
 		    <td>
-                        <h2>Set up your scheduled emails, and walk away.</h2>
+                        <!--<h2></h2>-->
                     </td>
                 </tr>
             </table>
@@ -119,6 +119,6 @@ if (!$_SESSION['loggedIn']):
   </body>
 </html>
 <?php
-exit();
+#exit();
 endif;
 ?>
