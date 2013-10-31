@@ -21,10 +21,6 @@ if($submitted_type == 'command')
     while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
     {
         $oldscore= $line['score'];
-        if(null($line['score']))
-        {
-            $oldscore = '0';    
-        }
     }
     
 
