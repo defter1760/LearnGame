@@ -136,7 +136,7 @@ a.schedule:active {color:#000;}  /* selected link */
 </style>
 
 </head>
-  <table style="border:1px solid black;">
+  <table style="border:1px solid black;" width=100%>
     <tr>
 	<td>
 	    <h1>Learning Game for System Administrators
@@ -145,8 +145,8 @@ a.schedule:active {color:#000;}  /* selected link */
         <tr>
             <td>
                 <h3>
-                    <a href=index.php>Home</a>
-                    <a href=scheduler.php>Scheduler</a>
+                    <a href="http://in0.us/LearnGame?review=1">Game</a>
+                    <a href="http://in0.us/LearnGame/">Review</a>
                     <a href=logout.php>Log out</a>
                 </h3>
             </td>
