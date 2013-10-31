@@ -60,8 +60,8 @@ if (!$_SESSION['loggedIn']):
 
 
   <!--<body>-->
-	    <tr>
-            <td>
+<!--	    <tr>
+            <td>-->
 	    <form method="post">
 <!--            <table>
 		<tr>
