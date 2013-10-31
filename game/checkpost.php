@@ -5,6 +5,10 @@ print_r($_POST);
 $submitted_type = $_POST['type'];
 $submitted_answer = $_POST['answer'];
 $submitted_question = $_POST['question'];
+if(empty($submitted_type))
+{
+    unset($submitted_type);
+}
 
 if($submitted_type == 'command')
 {
@@ -16,6 +20,20 @@ if($submitted_type == 'command')
         $truedescription= $line['description'];
     }
 
+
+}    
+if($submitted_type == 'reversecommand')
+{
+    $query = "SELECT command FROM commands where description='".$submitted_question."'";
+    $result = mysql_query($query) or die('Query failed: ' . mysql_error());
+    
+    while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+    {
+        $truedescription= $line['command'];
+    }
+}
+if(isset($submitted_type))
+{
     $query = "SELECT score FROM userdata where iduserdata = '".$_SESSION['UserID']."'";
     $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
     while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
@@ -23,7 +41,6 @@ if($submitted_type == 'command')
         $oldscore= $line['score'];
     }
     
-
     if($truedescription == $submitted_answer)
     {
         
@@ -41,8 +58,10 @@ if($submitted_type == 'command')
         
         echo 'Wrong, '.$submitted_question.'='.$truedescription;
     }
-$score = $newscore;
 }
+
+$score = $newscore;
+
 
 if(isset($score))
 {
