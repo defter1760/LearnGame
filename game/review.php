@@ -96,7 +96,7 @@ function showText(){
     
  <title>
     <?PHP
-    echo $typeint.'<br>';
+
     if($typeint == '1')
     {
         echo 'What does "'.$question.'" do?';
@@ -112,7 +112,7 @@ function showText(){
 <body>
 <?PHP
 
-    switch ($choice) {
+    switch ($choiceint) {
     case 1:
         echo 'Context: Linux commands<br><br>';
         break;
@@ -134,6 +134,7 @@ function showText(){
 ?>
 <h1>
 <?PHP
+echo $typeint.'<br>';
     echo 'What does "'.$question.'" do?';
             echo '<br><br>';
         echo '<div id="delayedText" style="visibility:hidden">
