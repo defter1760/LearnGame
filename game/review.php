@@ -18,18 +18,23 @@ else
 }
     switch ($_GET['choice']) {
     case 1:
+        $choiceint = '1';
         $choice = 'commands';
         break;
     case 2:
+        $choiceint = '2';
         $choice = 'commandadv';
         break;
     case 3:
+        $choiceint = '3';
         $choice = 'networking';
         break;
     case 4:
+        $choiceint = '4';
         $choice = 'networkingadv';
         break;
     case 5:
+        $choiceint = '5';
         $choice = 'scripting';
         break;
     }
