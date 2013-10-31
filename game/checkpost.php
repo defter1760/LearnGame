@@ -5,6 +5,7 @@ require('mySQLconnect.php');
 $submitted_type = $_POST['type'];
 $submitted_answer = $_POST['answer'];
 $submitted_question = $_POST['question'];
+$date = date('Y').'-'.date('m').'-'.date('d');
 if(empty($submitted_type))
 {
     unset($submitted_type);
@@ -42,6 +43,8 @@ if(isset($submitted_type))
             $oldscore += 1;
             $query = "UPDATE userdata set score='".$oldscore."' where iduserdata = '".$_SESSION['UserID']."'";
             $result = mysql_query($query) or die('Query failed: ' . mysql_error());
+            $query = "INSERT INTO answerhistory ('correct', 'date', 'userid') VALUES ('y', '".$date."', '".$_SESSION['UserID']."')";
+            $result = mysql_query($query) or die('Query failed: ' . mysql_error());
         }
         echo 'That\'s right! '.$submitted_question.'='.$truedescription;
     }
@@ -55,6 +58,8 @@ if(isset($submitted_type))
                 $oldscore = 0;
             }
             $query = "UPDATE userdata set score='".$oldscore."' where iduserdata = '".$_SESSION['UserID']."'";
+            $result = mysql_query($query) or die('Query failed: ' . mysql_error());
+            $query = "INSERT INTO answerhistory ('correct', 'date', 'userid') VALUES ('n', '".$date."', '".$_SESSION['UserID']."')";
             $result = mysql_query($query) or die('Query failed: ' . mysql_error());
         }
         echo 'Wrong, '.$submitted_question.'='.$truedescription;

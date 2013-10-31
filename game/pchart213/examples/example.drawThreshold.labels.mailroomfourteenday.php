@@ -55,9 +55,10 @@ $datearray[] = $today;
 $tomorrow = mktime(0, 0, 0, date("m"), date("d")+1, date("Y"));
 $tomorrow= date("Y-m-d", $tomorrow);
 $datearray[] = $tomorrow;
-$serverName = "localhost\SPICE";
-$connectionInfo = array( "Database"=>"SpiceData", "UID"=>"SpiceWriter2012", "PWD"=>"p1c3righttwoohonetwo");
-$conn = sqlsrv_connect( $serverName, $connectionInfo );
+$link = mysql_connect('localhost', 'ian', 'maniacman669')
+    or die('Could not connect: ' . mysql_error());
+#echo 'Connected successfully';
+mysql_select_db('LearnGame') or die('Could not select database');
 
 //$query = "SELECT DISTINCT
 //		retainerSentDate
