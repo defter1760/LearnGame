@@ -86,6 +86,17 @@ rgbstep=rgbstep-1;
             }
         }  
     </script>
+    <script>
+window.onload = function(){
+  // Change this value to however many seconds you want to delay the text by.
+  var theDelay = 5;
+  var timer = setTimeout("showText()",theDelay*1000)
+}
+function showText(){
+  document.getElementById("delayedText").style.visibility = "visible";
+}
+</script>
+    
  <title>
     <?PHP
         echo 'What does "'.$question.'" do?';
@@ -93,12 +104,14 @@ rgbstep=rgbstep-1;
     ?>
  </title>
 </head>
-<body onload="init();">
+<body <!--onload="init();"-->>
 <h1>
 <?PHP
     echo 'What does "'.$question.'" do?';
             echo '<br><br>';
-        echo '<span id="insertHere"></span>';
+        echo '<div id="delayedText" style="visibility:hidden">
+This is some delayed text
+</div>';
 ?>
     <div class="subdiv">
         <canvas id="MyCanvas1">
