@@ -94,6 +94,7 @@ window.onload = function(){
 }
 function showText(){
   document.getElementById("delayedText").style.visibility = "visible";
+  window.setTimeout(function(){location.reload()},5000);
 }
 </script>
     
@@ -104,7 +105,7 @@ function showText(){
     ?>
  </title>
 </head>
-<body <!--onload="init();"-->>
+<body>
 <h1>
 <?PHP
     echo 'What does "'.$question.'" do?';
