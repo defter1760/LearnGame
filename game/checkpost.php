@@ -53,6 +53,10 @@ if(isset($submitted_type))
     else
     {
             $oldscore -= 1;
+            if($oldscore < 0)
+            {
+                $oldscore = 0;
+            }
             $query = "UPDATE userdata set score='".$oldscore."' where iduserdata = '".$_SESSION['UserID']."'";
             $result = mysql_query($query) or die('Query failed: ' . mysql_error());
         
