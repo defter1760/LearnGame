@@ -9,7 +9,6 @@ if(isset($_GET['choice']))
     if(($min <= $_GET['choice']) && ($_GET['choice'] <= $max))
     {
         $choiceint = $_GET['choice'];
-        echo '<br>'.$choiceint.'<br>';
     }
 }
 else
@@ -119,6 +118,7 @@ function showText(){
  </title>
 </head>
 <body>
+<h2>
 <?PHP
 
     switch ($choiceint) {
@@ -141,6 +141,7 @@ function showText(){
 
     
 ?>
+</h2>
 <h1>
 <?PHP
     if($typeint == '1')
