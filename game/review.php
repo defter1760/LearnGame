@@ -144,14 +144,40 @@ function showText(){
 </h2>
 <h1>
 <?PHP
-    if($typeint == '1')
-    {
-        echo 'What does "'.$question.'" do?';
+
+    switch ($choiceint) {
+    case 1:
+        if($typeint == '1')
+        {
+            echo 'What does "'.$question.'" do?';
+        }
+        else
+        {
+            echo 'Which command? '.$question;
+        }
+        break;
+    case 2:
+        if($typeint == '1')
+        {
+            echo 'What does "'.$question.'" do?';
+        }
+        else
+        {
+            echo 'Which command? '.$question;
+        }
+        break;
+    case 3:
+        echo 'Context: Networknig<br><br>';
+        break;
+    case 4:
+        echo 'Context: Networking Adv<br><br>';
+        break;
+    case 5:
+        echo 'Context: Linux bash scripting<br><br>';
+        break;
     }
-    else
-    {
-        echo 'Which command? '.$question;
-    }
+
+
             echo '<br><br>';
         echo '<div id="delayedText" style="visibility:hidden">
 '.$answer.'
