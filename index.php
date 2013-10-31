@@ -57,13 +57,16 @@ echo '<table border=2 width="100%">';
             echo '<td>';
             echo '</td>';
             echo '<td valign="top">';
-            if($_GET['review'] == '1')
+            if(isset($_GET['review']))
             {
-                require('./game/review.php');
-            }
-            else
-            {
-                require('./game/main.php');  
+                if($_GET['review'] == '1')
+                {
+                    require('./game/review.php');
+                }
+                else
+                {
+                    require('./game/main.php');  
+                }
             }
             echo '</td>';
             echo '<td >';
