@@ -6,7 +6,7 @@ if(isset($_GET['choice']))
 {
     $min = '1';
     $max = '5';
-    if(($min <= $value) && ($value <= $max))
+    if(($min <= $_GET['choice']) && ($_GET['choice'] <= $max))
     {
         $choiceint = $_GET['choice'];
         echo '<br>'.$choiceint.'<br>';
