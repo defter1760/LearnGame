@@ -34,7 +34,7 @@ if($submitted_type == 'reversecommand')
 }
 if(isset($submitted_type))
 {
-    if(isset($_SESSION['UserID']))
+    if($_SESSION['loggedIn'] == true)
     {
         $query = "SELECT score FROM userdata where iduserdata = '".$_SESSION['UserID']."'";
         $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
@@ -45,15 +45,18 @@ if(isset($submitted_type))
     }
     if($truedescription == $submitted_answer)
     {
-        
+        if($_SESSION['loggedIn'] == true)
+        {
             $oldscore += 1;
             $query = "UPDATE userdata set score='".$oldscore."' where iduserdata = '".$_SESSION['UserID']."'";
             $result = mysql_query($query) or die('Query failed: ' . mysql_error());
-        
+        }
         echo 'That\'s right! '.$submitted_question.'='.$truedescription;
     }
     else
     {
+        if($_SESSION['loggedIn'] == true)
+        {
             $oldscore -= 1;
             if($oldscore < 0)
             {
@@ -61,11 +64,11 @@ if(isset($submitted_type))
             }
             $query = "UPDATE userdata set score='".$oldscore."' where iduserdata = '".$_SESSION['UserID']."'";
             $result = mysql_query($query) or die('Query failed: ' . mysql_error());
-        
+        }
         echo 'Wrong, '.$submitted_question.'='.$truedescription;
     }
 }
-if(isset($_SESSION['UserID']))
+if($_SESSION['loggedIn'] == true)
 {
     $score = $oldscore;
     if(isset($score))
