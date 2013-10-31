@@ -1,5 +1,3 @@
-<!--//access.php-->
-
 <?php
 require('mySQLconnect.php');
 require('functions.php');

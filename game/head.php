@@ -98,7 +98,7 @@ input[type="submit"] {
 
 h1 {  
     width: auto;  
-    padding: 15px 15px;  
+    padding: 10px 10px;  
     background: #B20000;  
     border: 0;  
     font-size: 26px;  
@@ -139,8 +139,7 @@ a.schedule:active {color:#000;}  /* selected link */
   <table style="border:1px solid black;" width=100%>
     <tr>
 	<td>
-	    <h1>Learning Game for System Administrators
-	    </h1>
+	    <h1>Learning Game for System Administrators</h1>
         </td>
         <tr>
             <td>

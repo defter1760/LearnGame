@@ -16,8 +16,8 @@
 <?PHP
 require('./game/access.php');
 #require('style.php');
-echo 'Learn the ins and outs of Linux while playing a game!';
-echo date('M').' '.date('d').' '.date('Y');
+//echo 'Learn the ins and outs of Linux while playing a game!';
+//echo date('M').' '.date('d').' '.date('Y');
 
 echo '<table border=2 width="100%">';
     echo '<tr>';
