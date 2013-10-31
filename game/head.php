@@ -90,7 +90,7 @@ input[type="submit"] {
     padding: 9px 15px;  
     background: #B20000;  
     border: 0;  
-    font-size: 14px;  
+    font-size: 8px;  
     color: #FFFFFF;  
     -moz-border-radius: 5px;  
     -webkit-border-radius: 5px;  

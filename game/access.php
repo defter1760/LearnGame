@@ -83,20 +83,18 @@ require('head.php');
                 </tr>
                 <tr>
                     <td>
-                        Username: 
+                        User: 
                     </td>
                     <td>
                         <input type="password" name="username" size="10px">
                     </td>
-                <!--</tr>
-                <tr>-->
                     <td>
-                        Password:
+                        Pass:
                         <td>
                             <input type="password" name="password" size="10px">
                         </td>
-                </tr>
-                <tr>
+                <!--</tr>
+                <tr>-->
                 <td>
                     
                 </td>
