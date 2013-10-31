@@ -91,7 +91,7 @@ rgbstep=rgbstep-1;
 ?>
 </h1>
     <div class="subdiv">
-        <canvas id="MyCanvas1" width="300" height="200">
+        <canvas id="MyCanvas1">
   This browser or document mode doesn't support canvas object</canvas>
           </div>
 </body>
