@@ -144,7 +144,7 @@ function showText(){
     }
     else
     {
-        echo 'Which command? '$question;
+        echo 'Which command? '.$question;
     }
             echo '<br><br>';
         echo '<div id="delayedText" style="visibility:hidden">
