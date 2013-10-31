@@ -17,11 +17,11 @@ if($submitted_type == 'command')
     }
     if($truedescription == $submitted_answer)
     {
-        echo 'That\'s right!'.$submitted_question.'='.$truedescription;
+        echo 'That\'s right! '.$submitted_question.'='.$truedescription;
     }
     else
     {
-        echo 'Wrong,'.$submitted_question.'='.$truedescription;
+        echo 'Wrong, '.$submitted_question.'='.$truedescription;
     }
 }
 
