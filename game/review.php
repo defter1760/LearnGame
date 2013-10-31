@@ -89,8 +89,7 @@ rgbstep=rgbstep-1;
  <title>
     <?PHP
         echo 'What does "'.$question.'" do?';
-        echo '<br><br>';
-        echo '<span id="insertHere"></span>';
+
     ?>
  </title>
 </head>
@@ -98,6 +97,8 @@ rgbstep=rgbstep-1;
 <h1>
 <?PHP
     echo 'What does "'.$question.'" do?';
+            echo '<br><br>';
+        echo '<span id="insertHere"></span>';
 ?>
     <div class="subdiv">
         <canvas id="MyCanvas1">
