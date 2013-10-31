@@ -109,7 +109,7 @@ h2 {
     padding: 15px 15px;  
     /*background: #B20000;  */
     border: 0;  
-    font-size: 16px;  
+    font-size: 14px;  
     color: #000;  
     }
 h3 {  
@@ -119,7 +119,15 @@ h3 {
     border: 0;  
     font-size: 12px;  
     color: #fff;  
-    }     
+    }
+h4 {  
+    width: auto;  
+    padding: 3px 3px;  
+    /*background: #B20000;  */
+    border: 0;  
+    font-size: 16px;  
+    color: #000;  
+    }    
 body {
   font-family: 'Open Sans', serif;
     font-size: 10%; 

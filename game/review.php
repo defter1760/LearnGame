@@ -142,7 +142,7 @@ function showText(){
     
 ?>
 </h2>
-<h1>
+<h4>
 <?PHP
 
     switch ($choiceint) {
@@ -183,9 +183,6 @@ function showText(){
 '.$answer.'
 </div>';
 ?>
-    <div class="subdiv">
-        <canvas id="MyCanvas1">
-  This browser or document mode doesn't support canvas object</canvas>
-          </div>
+</h4>
 </body>
 </html>
