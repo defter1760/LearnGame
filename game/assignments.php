@@ -121,10 +121,16 @@ if($typeint == '2')
 }
 if($typeint == '3')
 {
-    $type = 'context';
+    $type = 'commandsadv';
 }
 if($typeint == '4')
-
+{
+    $type = 'networking';
+}
+if($typeint == '5')
+{
+    $type = 'networkingadv';
+}
 //$type = 'command';
 //$question = 'cp';
 //    $a = 'copy a file';
