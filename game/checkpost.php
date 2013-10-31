@@ -44,7 +44,7 @@ if($submitted_type == 'command')
 $score = $newscore;
 }
 
-if(isset $score)
+if(isset($score))
 {
     echo '<br>Score: '.$score;
 }
