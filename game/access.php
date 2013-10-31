@@ -118,12 +118,20 @@ endif;
 
 if ($_SESSION['loggedIn']):
     
+    
+
+        $query = "SELECT score FROM userdata where iduserdata = '".$_SESSION['UserID']."'";
+        $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
+        while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+        {
+            $oldscore= $line['score'];
+        }
 ?>
             <table >
                 <tr>
                     <td>
                         <?PHP
-			    echo 'Logged in as: <b>'.$_SESSION['UserName'].'</b>';
+			    echo 'Logged in as: <b>'.$_SESSION['UserName'].'</b> [ '.$oldscore.' ]';
 			?>
                     </td>
                 </tr>
