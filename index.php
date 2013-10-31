@@ -22,7 +22,7 @@ require('./game/head.php');
 
 echo '<table border=2 width="100%">';
     echo '<tr>';
-        echo '<td width="200px">';
+        echo '<td width="50px">';
             #echo '<a href="http://in0.us/LearnGame?review=1">[review]</a> <a href="http://in0.us/LearnGame/">[game]</a>';
         echo '</td>';
         echo '<td>';
