@@ -81,7 +81,13 @@ echo '<table border=2 width="100%">';
             echo '</td>';
             echo '<td >';
             echo '</td>';
-    echo '</tr>';    
+    echo '</tr>';
+echo '<tr>';
+    echo '<td>';
+    echo '</td>';
+    echo '<td>';
+    require('./game/pchart213/examples/example.drawThreshold.labels.score_14_days.php');
+    echo '</td>';
 ?>
 </body>
 </html>
