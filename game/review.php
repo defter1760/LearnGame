@@ -40,20 +40,24 @@ else
             if($choice = 'commands')
             {
                 $q_desc = 'command';
+                $a_desc = 'description';
             }
             else
             {
                 $q_desc = 'question';
+                $a_desc = 'answer';
             }
         }
         else
         {
             if($choice = 'commands')
             {
-                $a_desc = 'description';
+                $q_desc = 'description';
+                $a_desc = 'command';
             }
             else
             {
+                $q_desc = 'answer';
                 $a_desc = 'question';
             }
         }
@@ -135,7 +139,14 @@ function showText(){
 <h1>
 <?PHP
 echo $typeint.'<br>';
-    echo 'What does "'.$question.'" do?';
+    if($typeint == '1')
+    {
+        echo 'What does "'.$question.'" do?';
+    }
+    else
+    {
+        echo $question;
+    }
             echo '<br><br>';
         echo '<div id="delayedText" style="visibility:hidden">
 '.$answer.'
