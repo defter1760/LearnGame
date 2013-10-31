@@ -44,23 +44,23 @@ if(isset($submitted_type))
     if($truedescription == $submitted_answer)
     {
         
-            $newscore = $oldscore++;
-            $query = "UPDATE userdata set score='".$newscore."' where iduserdata = '".$_SESSION['UserID']."'";
+            $oldscore += 1;
+            $query = "UPDATE userdata set score='".$oldscore."' where iduserdata = '".$_SESSION['UserID']."'";
             $result = mysql_query($query) or die('Query failed: ' . mysql_error());
         
         echo 'That\'s right! '.$submitted_question.'='.$truedescription;
     }
     else
     {
-            $newscore = $oldscore--;
-            $query = "UPDATE userdata set score='".$newscore."' where iduserdata = '".$_SESSION['UserID']."'";
+            $oldscore -= 1;
+            $query = "UPDATE userdata set score='".$oldscore."' where iduserdata = '".$_SESSION['UserID']."'";
             $result = mysql_query($query) or die('Query failed: ' . mysql_error());
         
         echo 'Wrong, '.$submitted_question.'='.$truedescription;
     }
 }
 
-$score = $newscore;
+$score = $oldscore;
 
 
 if(isset($score))
