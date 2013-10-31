@@ -66,7 +66,7 @@ else
         $count= $line['COUNT'];
     }
 
-    $selection = rand(1, $commandcount);
+    $selection = rand(1, $count);
 
     $query = "SELECT * FROM ".$choice." where id='".$selection."'";
     $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
