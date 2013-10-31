@@ -88,8 +88,8 @@ require('head.php');
                     <td>
                         <input type="password" name="username">
                     </td>
-                </tr>
-                <tr>
+                <!--</tr>
+                <tr>-->
                     <td>
                         Password:
                         <td>
