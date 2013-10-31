@@ -31,7 +31,8 @@ function longWordWrap($string) {
 <html>
 <head>
     <style>
-        canvas{border: 0px solid #bbb; width:720px; height: 200px;}
+        canvas{border: 0px solid #bbb; width:700px; height: 200px;}
+        .subdiv{width: 720px;}
         .text{margin: auto; width: 10px;}
     </style>
  
@@ -89,7 +90,6 @@ rgbstep=rgbstep-1;
 <?PHP
     echo 'What does "'.$question.'" do?';
 ?>
-</h1>
     <div class="subdiv">
         <canvas id="MyCanvas1">
   This browser or document mode doesn't support canvas object</canvas>
