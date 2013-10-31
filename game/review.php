@@ -9,6 +9,7 @@ if(isset($_GET['choice']))
     if(($min <= $value) && ($value <= $max))
     {
         $choiceint = $_GET['choice'];
+        echo '<br>'.$choiceint.'<br>';
     }
 }
 else
@@ -95,6 +96,7 @@ function showText(){
     
  <title>
     <?PHP
+    echo $typeint.'<br>';
     if($typeint == '1')
     {
         echo 'What does "'.$question.'" do?';
