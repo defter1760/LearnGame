@@ -34,13 +34,15 @@ if($submitted_type == 'reversecommand')
 }
 if(isset($submitted_type))
 {
-    $query = "SELECT score FROM userdata where iduserdata = '".$_SESSION['UserID']."'";
-    $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
-    while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+    if(isset($_SESSION['UserID']))
     {
-        $oldscore= $line['score'];
+        $query = "SELECT score FROM userdata where iduserdata = '".$_SESSION['UserID']."'";
+        $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
+        while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+        {
+            $oldscore= $line['score'];
+        }
     }
-    
     if($truedescription == $submitted_answer)
     {
         
@@ -63,14 +65,19 @@ if(isset($submitted_type))
         echo 'Wrong, '.$submitted_question.'='.$truedescription;
     }
 }
-
-$score = $oldscore;
-
-
-if(isset($score))
+if(isset($_SESSION['UserID']))
 {
-    echo '<br>Score: '.$score;
+    $score = $oldscore;
+    if(isset($score))
+    {
+        echo '<br>Score: '.$score;
+    }
 }
+else
+{
+    echo '<br> Log in to keep score.';
+}
+
 
 
 ?>
