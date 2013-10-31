@@ -57,7 +57,7 @@ if (!$_SESSION['loggedIn']):
 //{
 //    echo 'Woof';
 //}
-#require('head.php');
+require('head.php');
 ?>
 
 
@@ -80,12 +80,11 @@ if (!$_SESSION['loggedIn']):
             <table >
                 <tr>
 		    <td>
-                        <h2>You need to login or <br>create an account:</h2>
+                        <!--<h2>You need to login or <br>create an account:</h2>-->
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        
                         Username: 
                     </td>
                     <td>
