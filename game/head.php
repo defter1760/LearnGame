@@ -85,7 +85,7 @@ input:focus, textarea:focus {
     color: #000;   
     }  
   
-input[type="submit"] {  
+input.login[type="submit"] {  
     width: auto;  
     padding: 9px 15px;  
     background: #B20000;  

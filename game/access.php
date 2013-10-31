@@ -99,7 +99,7 @@ require('head.php');
                     
                 </td>
                     <td align=right>
-                        <input type="submit" name="submit" value="Login">   
+                        <input style="login" type="submit" name="submit" value="Login">   
                     </td>
                 </tr>
                          
