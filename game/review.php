@@ -45,7 +45,7 @@ function longWordWrap($string) {
             can = document.getElementById("MyCanvas1");
             ctx= can.getContext("2d");
             ctx.fillStyle = "blue";
-            ctx.font = "10pt Helvetica";
+            ctx.font = "6pt Helvetica";
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             Textfadeup();
