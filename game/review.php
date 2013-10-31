@@ -138,14 +138,13 @@ function showText(){
 ?>
 <h1>
 <?PHP
-echo $typeint.'<br>';
     if($typeint == '1')
     {
         echo 'What does "'.$question.'" do?';
     }
     else
     {
-        echo $question;
+        echo 'Which command? '$question;
     }
             echo '<br><br>';
         echo '<div id="delayedText" style="visibility:hidden">
