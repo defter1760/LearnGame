@@ -98,10 +98,10 @@ input.login[type="submit"] {
 
 h1 {  
     width: auto;  
-    padding: 10px 10px;  
+    padding: 5px 5px;  
     background: #B20000;  
     border: 0;  
-    font-size: 26px;  
+    font-size: 16px;  
     color: #FFFFFF;  
     }
 h2 {  
@@ -114,7 +114,7 @@ h2 {
     }
 h3 {  
     width: auto;  
-    padding: 10px 10px;  
+    padding: 5px 5px;  
     background: #000;  
     border: 0;  
     font-size: 12px;  
@@ -144,8 +144,8 @@ a.schedule:active {color:#000;}  /* selected link */
         <tr>
             <td>
                 <h3>
-                    <a href="http://in0.us/LearnGame?review=1">Game</a>
-                    <a href="http://in0.us/LearnGame/">Review</a>
+                    <a href="http://in0.us/LearnGame/">Game</a>
+                    <a href="http://in0.us/LearnGame?review=1">Review</a>
                     <a href=logout.php>Log out</a>
                 </h3>
             </td>
