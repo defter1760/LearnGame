@@ -137,7 +137,7 @@ a.schedule:active {color:#000;}  /* selected link */
 
 </head>
   <table style="border:1px solid black;" width=100%>
-    <tr>
+    <tr height="17px">
 	<td>
 	    <h1>Learning Game for System Administrators</h1>
         </td>

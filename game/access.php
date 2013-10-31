@@ -63,35 +63,34 @@ require('head.php');
 	    <tr>
             <td>
 	    <form method="post">
-            <table>
+<!--            <table>
 		<tr>
 		    <td>
-                        <!--<h2></h2>-->
+                        
                     </td>
                 </tr>
                 <tr>
 		    <td>
-                        <!--<h2></h2>-->
+                        
                     </td>
                 </tr>
-            </table>
+            </table>-->
             <table >
-                <tr>
+<!--                <tr>
 		    <td>
-                        <!--<h2>You need to login or <br>create an account:</h2>-->
                     </td>
-                </tr>
+                </tr>-->
                 <tr>
                     <td>
                         User: 
                     </td>
                     <td>
-                        <input type="password" name="username" size="10px">
+                        <input type="password" name="username" size="5px">
                     </td>
                     <td>
                         Pass:
                         <td>
-                            <input type="password" name="password" size="10px">
+                            <input type="password" name="password" size="5px">
                         </td>
                 <!--</tr>
                 <tr>-->
