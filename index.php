@@ -1,5 +1,21 @@
+<html>
+    <style>
+        html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #111;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	height: 100%;
+	overflow: auto;
+}
+    </style>
+    <body>
 <?PHP
-require('style.php');
+
+#require('style.php');
 echo 'Learn the ins and outs of Linux while playing a game!';
 echo date('M').' '.date('d').' '.date('Y');
 
@@ -65,3 +81,5 @@ echo '<table border=2 width="100%">';
             echo '</td>';
     echo '</tr>';    
 ?>
+</body>
+</html>
