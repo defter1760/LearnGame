@@ -98,7 +98,7 @@ input.login[type="submit"] {
 
 h1 {  
     width: auto;  
-    padding: 5px 5px;  
+    padding: 0px 0px;  
     background: #B20000;  
     border: 0;  
     font-size: 16px;  
@@ -114,7 +114,7 @@ h2 {
     }
 h3 {  
     width: auto;  
-    padding: 5px 5px;  
+    padding: 0px 0px;  
     background: #000;  
     border: 0;  
     font-size: 12px;  
