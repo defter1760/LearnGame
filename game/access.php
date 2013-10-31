@@ -115,4 +115,19 @@ if (!$_SESSION['loggedIn']):
 <?php
 #exit();
 endif;
+
+if ($_SESSION['loggedIn']):
+    
+?>
+            <table >
+                <tr>
+                    <td>
+                        <?PHP
+			    echo 'Logged in as:'.$pUser;
+			?>
+                    </td>
+                </tr>
+            </table>
+<?PHP
+endif;
 ?>
