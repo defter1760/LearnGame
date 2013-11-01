@@ -43,7 +43,7 @@ if(isset($submitted_type))
             $oldscore += 1;
             $query = "UPDATE userdata set score='".$oldscore."' where iduserdata = '".$_SESSION['UserID']."'";
             $result = mysql_query($query) or die('Query failed: ' . mysql_error());
-            $query = "INSERT INTO answerhistory ('correct', 'date', 'userid') VALUES ('y', '".$date."', '".$_SESSION['UserID']."')";
+            $query = "INSERT INTO answerhistory (correct, date, userid) VALUES ('y', '".$date."', '".$_SESSION['UserID']."')";
             $result = mysql_query($query) or die('Query failed: ' . mysql_error());
         }
         echo 'That\'s right! '.$submitted_question.'='.$truedescription;
@@ -59,7 +59,7 @@ if(isset($submitted_type))
             }
             $query = "UPDATE userdata set score='".$oldscore."' where iduserdata = '".$_SESSION['UserID']."'";
             $result = mysql_query($query) or die('Query failed: ' . mysql_error());
-            $query = "INSERT INTO answerhistory ('correct', 'date', 'userid') VALUES ('n', '".$date."', '".$_SESSION['UserID']."')";
+            $query = "INSERT INTO answerhistory (correct, date, userid) VALUES ('n', '".$date."', '".$_SESSION['UserID']."')";
             $result = mysql_query($query) or die('Query failed: ' . mysql_error());
         }
         echo 'Wrong, '.$submitted_question.'='.$truedescription;
