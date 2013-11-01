@@ -61,6 +61,55 @@ if(isset($_GET['su']))
 	       $tomorrow= date("Y-m-d", $tomorrow);
 	       $datearray[] = $tomorrow;
 	       
+	       $tomorrow = mktime(0, 0, 0, date("m"), date("d")-14, date("Y"));
+	       $tomorrow= date("m-d", $tomorrow);
+	       $datearray2[] = $tomorrow;
+	       $tomorrow = mktime(0, 0, 0, date("m"), date("d")-13, date("Y"));
+	       $tomorrow= date("m-d", $tomorrow);
+	       $datearray2[] = $tomorrow;
+	       $tomorrow = mktime(0, 0, 0, date("m"), date("d")-12, date("Y"));
+	       $tomorrow= date("m-d", $tomorrow);
+	       $datearray2[] = $tomorrow;
+	       $tomorrow = mktime(0, 0, 0, date("m"), date("d")-11, date("Y"));
+	       $tomorrow= date("m-d", $tomorrow);
+	       $datearray2[] = $tomorrow;
+	       $tomorrow = mktime(0, 0, 0, date("m"), date("d")-10, date("Y"));
+	       $tomorrow= date("m-d", $tomorrow);
+	       $datearray2[] = $tomorrow;
+	       $tomorrow = mktime(0, 0, 0, date("m"), date("d")-9, date("Y"));
+	       $tomorrow= date("m-d", $tomorrow);
+	       $datearray2[] = $tomorrow;
+	       $tomorrow = mktime(0, 0, 0, date("m"), date("d")-8, date("Y"));
+	       $tomorrow= date("m-d", $tomorrow);
+	       $datearray2[] = $tomorrow;
+	       $tomorrow = mktime(0, 0, 0, date("m"), date("d")-7, date("Y"));
+	       $tomorrow= date("m-d", $tomorrow);
+	       $datearray2[] = $tomorrow;
+	       $tomorrow = mktime(0, 0, 0, date("m"), date("d")-6, date("Y"));
+	       $tomorrow= date("m-d", $tomorrow);
+	       $datearray2[] = $tomorrow;
+	       $tomorrow = mktime(0, 0, 0, date("m"), date("d")-5, date("Y"));
+	       $tomorrow= date("m-d", $tomorrow);
+	       $datearray2[] = $tomorrow;
+	       $tomorrow = mktime(0, 0, 0, date("m"), date("d")-4, date("Y"));
+	       $tomorrow= date("m-d", $tomorrow);
+	       $datearray2[] = $tomorrow;
+	       $tomorrow = mktime(0, 0, 0, date("m"), date("d")-3, date("Y"));
+	       $tomorrow= date("m-d", $tomorrow);
+	       $datearray2[] = $tomorrow;
+	       $tomorrow = mktime(0, 0, 0, date("m"), date("d")-2, date("Y"));
+	       $tomorrow= date("m-d", $tomorrow);
+	       $datearray2[] = $tomorrow;
+	       $tomorrow = mktime(0, 0, 0, date("m"), date("d")-1, date("Y"));
+	       $tomorrow= date("m-d", $tomorrow);
+	       $datearray2[] = $tomorrow;
+	       $today = mktime(0, 0, 0, date("m"), date("d"), date("Y"));
+	       $today= date("m-d", $today);
+	       $datearray2[] = $today;
+	       $tomorrow = mktime(0, 0, 0, date("m"), date("d")+1, date("Y"));
+	       $tomorrow= date("m-d", $tomorrow);
+	       $datearray2[] = $tomorrow;	       
+	       
 	       $link = mysql_connect('localhost', 'ian', 'maniacman669')
 		   or die('Could not connect: ' . mysql_error());
 	       #echo 'Connected successfully';
@@ -104,7 +153,7 @@ if(isset($_GET['su']))
 	       $MyData->addPoints($incorrectarray,"Incorrect");
 	       
 		$MyData->setAxisName(0,"Score");
-		$MyData->addPoints($datearray,"Labels");
+		$MyData->addPoints($datearray2,"Labels");
 		$MyData->setSerieDescription("Labels","Months");
 		$MyData->setAbscissa("Labels");
 	       
@@ -138,7 +187,7 @@ if(isset($_GET['su']))
 		$myPicture->writeBounds();
 	       
 		/* Write the chart legend */ 
-		$myPicture->drawLegend(100,215,array("Style"=>LEGEND_NOBORDER,"Mode"=>LEGEND_HORIZONTAL));
+		$myPicture->drawLegend(30,315,array("Style"=>LEGEND_NOBORDER,"Mode"=>LEGEND_HORIZONTAL));
 	       
 		/* Render the picture (choose the best way) */
 		$myPicture->autoOutput("pictures/example.drawThreshold.labels.png");
