@@ -158,7 +158,7 @@ if(isset($_GET['su']))
 		$MyData->setAbscissa("Labels");
 	       
 		/* Create the pChart object */
-		$myPicture = new pImage(720,630,$MyData);
+		$myPicture = new pImage(720,430,$MyData);
 		$myPicture->drawGradientArea(0,0,720,330,DIRECTION_VERTICAL,array("StartR"=>100,"StartG"=>100,"StartB"=>100,"EndR"=>50,"EndG"=>50,"EndB"=>50,"Alpha"=>100));
 		$myPicture->drawGradientArea(0,0,720,330,DIRECTION_HORIZONTAL,array("StartR"=>100,"StartG"=>100,"StartB"=>100,"EndR"=>50,"EndG"=>50,"EndB"=>50,"Alpha"=>20));
 		$myPicture->drawGradientArea(0,0,60,330,DIRECTION_HORIZONTAL,array("StartR"=>0,"StartG"=>0,"StartB"=>0,"EndR"=>50,"EndG"=>50,"EndB"=>50,"Alpha"=>100));
@@ -171,7 +171,7 @@ if(isset($_GET['su']))
 	       
 		/* Prepare the chart area */
 		$myPicture->setGraphArea(30,30,700,290);
-		$myPicture->drawFilledRectangle(100,30,700,290,array("R"=>255,"G"=>255,"B"=>255,"Alpha"=>20));
+		$myPicture->drawFilledRectangle(30,30,700,290,array("R"=>255,"G"=>255,"B"=>255,"Alpha"=>20));
 		$myPicture->setFontProperties(array("R"=>255,"G"=>255,"B"=>255,"FontName"=>"../fonts/pf_arma_five.ttf","FontSize"=>6));
 		$myPicture->drawScale(array("AxisR"=>255,"AxisG"=>255,"AxisB"=>255,"DrawSubTicks"=>TRUE,"CycleBackground"=>TRUE));
 	       
