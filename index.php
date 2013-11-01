@@ -98,11 +98,19 @@ echo '<table border=0 width="985px">';
         echo '<td>';
         echo '</td>';
         echo '<td>';
+        if($_SESSION['loggedIn'] == true)
+        {
+            echo 'Your correct vs incorrect per day.';
         //require("./game/pchart213/class/pData.class.php");
         //require("./game/pchart213/class/pDraw.class.php");
         //require("./game/pchart213/class/pImage.class.php");
         //require('./game/pchart213/examples/example.drawThreshold.labels.score_14_days.php');
         echo '<iframe src="http://in0.us/LearnGame/game/pchart213/examples/example.drawThreshold.labels.score_14_days.php?su='.$_SESSION['UserID'].'" seamless="seamless" width="728px" height="330px" scrolling="no"></iframe>';
+        }
+        else
+        {
+            echo 'Log in for your score per day chart.';
+        }
         echo '</td>';
         echo '<td >';
         echo '</td>';

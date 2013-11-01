@@ -46,7 +46,7 @@ if(isset($submitted_type))
             $query = "INSERT INTO answerhistory (correct, date, userid) VALUES ('y', '".$date."', '".$_SESSION['UserID']."')";
             $result = mysql_query($query) or die('Query failed: ' . mysql_error());
         }
-        echo 'That\'s right! '.$submitted_question.'='.$truedescription;
+        echo 'Correct! '.$submitted_question.'='.$truedescription;
     }
     else
     {
