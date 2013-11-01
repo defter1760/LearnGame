@@ -1,8 +1,8 @@
 <?php
-print_r($_GET);
+#print_r($_GET);
 if(isset($_GET['su']))
 {
-	if(!empty($_GET['su'])
+	if(!empty($_GET['su']))
 	{
 		/* CAT:Misc */
 	       
