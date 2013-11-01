@@ -2,7 +2,7 @@
 print_r($_GET);
 if(isset($_GET['su']))
 {
-	if($_GET['su'] < 0)
+	if(!empty($_GET['su'])
 	{
 		/* CAT:Misc */
 	       
