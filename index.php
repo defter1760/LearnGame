@@ -20,7 +20,7 @@ require('./game/head.php');
 //echo 'Learn the ins and outs of Linux while playing a game!';
 //echo date('M').' '.date('d').' '.date('Y');
 
-echo '<table border=2 width="980px">';
+echo '<table border=0 width="980px">';
     echo '<tr>';
         echo '<td width="50px">';
             #echo '<a href="http://in0.us/LearnGame?review=1">[review]</a> <a href="http://in0.us/LearnGame/">[game]</a>';
@@ -46,7 +46,11 @@ echo '<table border=2 width="980px">';
             echo '<td>';
             echo '</td>';
             echo '<td>';
+            $underint = rand(1, 5);
+            if($underint == '3')
+            {
                 require('./ads/LGUnderHS.php');
+            }
                 #echo '[ad]';
             echo '</td>';
             echo '<td >';
@@ -67,7 +71,11 @@ echo '<table border=2 width="980px">';
             }
             echo '</td>';
             echo '<td >';
+            $underint3 = rand(1, 2);
+            if($underint3 == '1')
+            {
                 require('./ads/LGRightBar.php');
+            }            
                 #echo '[ad]';            
             echo '</td>';
     echo '</tr>';
@@ -77,6 +85,11 @@ echo '<table border=2 width="980px">';
             echo '</td>';
             echo '<td>';
                 require('./ads/LGUnderGame.php');
+            $underint2 = rand(1, 3);
+            if($underint2 == '2')
+            {
+                require('./ads/LGUnderGame.php');
+            }
                 #echo '[ad]';
             echo '</td>';
             echo '<td >';
