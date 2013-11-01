@@ -121,7 +121,7 @@ if(isset($_GET['su']))
 		#$myPicture->drawText(35,115,"Score",array("R"=>255,"G"=>255,"B"=>255,"FontSize"=>20,"Angle"=>90,"Align"=>TEXT_ALIGN_BOTTOMMIDDLE));
 	       
 		/* Prepare the chart area */
-		$myPicture->setGraphArea(100,30,700,290);
+		$myPicture->setGraphArea(30,30,700,290);
 		$myPicture->drawFilledRectangle(100,30,700,290,array("R"=>255,"G"=>255,"B"=>255,"Alpha"=>20));
 		$myPicture->setFontProperties(array("R"=>255,"G"=>255,"B"=>255,"FontName"=>"../fonts/pf_arma_five.ttf","FontSize"=>6));
 		$myPicture->drawScale(array("AxisR"=>255,"AxisG"=>255,"AxisB"=>255,"DrawSubTicks"=>TRUE,"CycleBackground"=>TRUE));
