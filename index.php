@@ -90,7 +90,7 @@ echo '<tr>';
     //require("./game/pchart213/class/pDraw.class.php");
     //require("./game/pchart213/class/pImage.class.php");
     //require('./game/pchart213/examples/example.drawThreshold.labels.score_14_days.php');
-    echo '<iframe src="http://in0.us/LearnGame/game/pchart213/examples/example.drawThreshold.labels.score_14_days.php?su='.$_SESSION['UserID'].'" seamless="seamless" width="100%" height="400px" scrolling="no"></iframe>';
+    echo '<iframe src="http://in0.us/LearnGame/game/pchart213/examples/example.drawThreshold.labels.score_14_days.php?su='.$_SESSION['UserID'].'" seamless="seamless" width="100%" height="300px" scrolling="no"></iframe>';
     echo '</td>';
 ?>
 </body>
