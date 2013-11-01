@@ -109,7 +109,7 @@ if(isset($_GET['su']))
 		$MyData->setAbscissa("Labels");
 	       
 		/* Create the pChart object */
-		$myPicture = new pImage(1200,630,$MyData);
+		$myPicture = new pImage(720,630,$MyData);
 		$myPicture->drawGradientArea(0,0,720,330,DIRECTION_VERTICAL,array("StartR"=>100,"StartG"=>100,"StartB"=>100,"EndR"=>50,"EndG"=>50,"EndB"=>50,"Alpha"=>100));
 		$myPicture->drawGradientArea(0,0,720,330,DIRECTION_HORIZONTAL,array("StartR"=>100,"StartG"=>100,"StartB"=>100,"EndR"=>50,"EndG"=>50,"EndB"=>50,"Alpha"=>20));
 		$myPicture->drawGradientArea(0,0,60,330,DIRECTION_HORIZONTAL,array("StartR"=>0,"StartG"=>0,"StartB"=>0,"EndR"=>50,"EndG"=>50,"EndB"=>50,"Alpha"=>100));
