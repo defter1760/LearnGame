@@ -20,7 +20,7 @@ require('./game/head.php');
 //echo 'Learn the ins and outs of Linux while playing a game!';
 //echo date('M').' '.date('d').' '.date('Y');
 
-echo '<table border=2 width="100%">';
+echo '<table border=2 width="980px">';
     echo '<tr>';
         echo '<td width="50px">';
             #echo '<a href="http://in0.us/LearnGame?review=1">[review]</a> <a href="http://in0.us/LearnGame/">[game]</a>';
