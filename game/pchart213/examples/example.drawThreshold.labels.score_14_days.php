@@ -65,26 +65,26 @@ foreach($datearray as $key => $value)
 {
 	$currentdate = $value;
 	$query2 = "SELECT count(*) as COUNT FROM answerhistory where date='$currentdate' and userid= '".$_SESSION['UserID']."'";            
-	$results2 = sqlsrv_query($conn,$query2);
-	while($row2 = sqlsrv_fetch_array($results2))
+	$results2 = mysql_query($query2) or die('Query failed: ' . mysql_error());
+	while ($row2 = mysql_fetch_array($results2, MYSQL_ASSOC))
 	{
 		$countarray[] = $row2['COUNT'];
 	}
 	$query3 = "SELECT count(*) as COUNT FROM answerhistory where date='$currentdate' and userid= '".$_SESSION['UserID']."' and correct='y'";              
 	
-	$results3 = sqlsrv_query($conn,$query3);
-	while($row3 = sqlsrv_fetch_array($results3))
+	$results3 = mysql_query($query3) or die('Query failed: ' . mysql_error());
+	while ($row3 = mysql_fetch_array($results3, MYSQL_ASSOC))
 	{
-		$docusignarray[] = $row3['COUNT'];
+		$correctarray[] = $row3['COUNT'];
 	}
 	
 	$query4 = "SELECT count(*) as COUNT FROM answerhistory where date='$currentdate' and userid= '".$_SESSION['UserID']."' and correct='n'";              
 	            
 	
-	$results4 = sqlsrv_query($conn,$query4);
-	while($row4 = sqlsrv_fetch_array($results4))
+	$results4 = mysql_query($query4) or die('Query failed: ' . mysql_error());
+	while ($row4 = mysql_fetch_array($results4, MYSQL_ASSOC))
 	{
-		$notdocusigntarray[] = $row4['COUNT'];
+		$incorrectarray[] = $row4['COUNT'];
 	}
 }
 
