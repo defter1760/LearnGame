@@ -161,7 +161,7 @@ if(isset($_GET['su']))
 		$myPicture = new pImage(720,430,$MyData);
 		$myPicture->drawGradientArea(0,0,720,330,DIRECTION_VERTICAL,array("StartR"=>100,"StartG"=>100,"StartB"=>100,"EndR"=>50,"EndG"=>50,"EndB"=>50,"Alpha"=>100));
 		$myPicture->drawGradientArea(0,0,720,330,DIRECTION_HORIZONTAL,array("StartR"=>100,"StartG"=>100,"StartB"=>100,"EndR"=>50,"EndG"=>50,"EndB"=>50,"Alpha"=>20));
-		$myPicture->drawGradientArea(0,0,60,330,DIRECTION_HORIZONTAL,array("StartR"=>0,"StartG"=>0,"StartB"=>0,"EndR"=>50,"EndG"=>50,"EndB"=>50,"Alpha"=>100));
+		#$myPicture->drawGradientArea(0,0,0,330,DIRECTION_HORIZONTAL,array("StartR"=>0,"StartG"=>0,"StartB"=>0,"EndR"=>50,"EndG"=>50,"EndB"=>50,"Alpha"=>100));
 	       
 		/* Do some cosmetics */
 		#$myPicture->drawLine(60,0,60,230,array("R"=>70,"G"=>70,"B"=>70));
