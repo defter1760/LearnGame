@@ -2,9 +2,9 @@
  /* CAT:Misc */
 
  /* pChart library inclusions */
- include("../class/pData.class.php");
- include("../class/pDraw.class.php");
- include("../class/pImage.class.php");
+ //include("../class/pData.class.php");
+ //include("../class/pDraw.class.php");
+ //include("../class/pImage.class.php");
 $date = date('Y').'-'.date('m').'-'.date('d');
 
 $tomorrow = mktime(0, 0, 0, date("m"), date("d")-14, date("Y"));
