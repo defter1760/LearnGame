@@ -86,10 +86,11 @@ echo '<tr>';
     echo '<td>';
     echo '</td>';
     echo '<td>';
-    require("./game/pchart213/class/pData.class.php");
-    require("./game/pchart213/class/pDraw.class.php");
-    require("./game/pchart213/class/pImage.class.php");
-    require('./game/pchart213/examples/example.drawThreshold.labels.score_14_days.php');
+    //require("./game/pchart213/class/pData.class.php");
+    //require("./game/pchart213/class/pDraw.class.php");
+    //require("./game/pchart213/class/pImage.class.php");
+    //require('./game/pchart213/examples/example.drawThreshold.labels.score_14_days.php');
+    echo '<iframe src="/game/pchart213/examples/example.drawThreshold.labels.score_14_days.php?su='.$_SESSION['UserID'].'" seamless="seamless"></iframe>';
     echo '</td>';
 ?>
 </body>
