@@ -20,14 +20,14 @@ require('./game/head.php');
 //echo 'Learn the ins and outs of Linux while playing a game!';
 //echo date('M').' '.date('d').' '.date('Y');
 
-echo '<table border=0 width="980px">';
+echo '<table border=0 width="985px">';
     echo '<tr>';
         echo '<td width="50px">';
             #echo '<a href="http://in0.us/LearnGame?review=1">[review]</a> <a href="http://in0.us/LearnGame/">[game]</a>';
         echo '</td>';
         echo '<td>';
         echo '</td>';
-        echo '<td width="200px">';
+        echo '<td width="205px">';
             require('./game/access.php');
             #echo '[Login] [User] [*Pass]';
         echo '</td>';
@@ -84,7 +84,6 @@ echo '<table border=0 width="980px">';
             echo '<td>';
             echo '</td>';
             echo '<td>';
-                require('./ads/LGUnderGame.php');
             $underint2 = rand(1, 3);
             if($underint2 == '2')
             {
