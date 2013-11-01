@@ -110,19 +110,19 @@ if(isset($_GET['su']))
 	       
 		/* Create the pChart object */
 		$myPicture = new pImage(1200,630,$MyData);
-		$myPicture->drawGradientArea(0,0,1200,630,DIRECTION_VERTICAL,array("StartR"=>100,"StartG"=>100,"StartB"=>100,"EndR"=>50,"EndG"=>50,"EndB"=>50,"Alpha"=>100));
-		$myPicture->drawGradientArea(0,0,1200,630,DIRECTION_HORIZONTAL,array("StartR"=>100,"StartG"=>100,"StartB"=>100,"EndR"=>50,"EndG"=>50,"EndB"=>50,"Alpha"=>20));
-		$myPicture->drawGradientArea(0,0,60,630,DIRECTION_HORIZONTAL,array("StartR"=>0,"StartG"=>0,"StartB"=>0,"EndR"=>50,"EndG"=>50,"EndB"=>50,"Alpha"=>100));
+		$myPicture->drawGradientArea(0,0,720,330,DIRECTION_VERTICAL,array("StartR"=>100,"StartG"=>100,"StartB"=>100,"EndR"=>50,"EndG"=>50,"EndB"=>50,"Alpha"=>100));
+		$myPicture->drawGradientArea(0,0,720,330,DIRECTION_HORIZONTAL,array("StartR"=>100,"StartG"=>100,"StartB"=>100,"EndR"=>50,"EndG"=>50,"EndB"=>50,"Alpha"=>20));
+		$myPicture->drawGradientArea(0,0,60,330,DIRECTION_HORIZONTAL,array("StartR"=>0,"StartG"=>0,"StartB"=>0,"EndR"=>50,"EndG"=>50,"EndB"=>50,"Alpha"=>100));
 	       
 		/* Do some cosmetics */
-		$myPicture->drawLine(60,0,60,630,array("R"=>70,"G"=>70,"B"=>70));
-		$myPicture->drawRectangle(0,0,1199,629,array("R"=>0,"G"=>0,"B"=>0));
+		$myPicture->drawLine(60,0,60,230,array("R"=>70,"G"=>70,"B"=>70));
+		$myPicture->drawRectangle(0,0,700,229,array("R"=>0,"G"=>0,"B"=>0));
 		$myPicture->setFontProperties(array("FontName"=>"../fonts/Forgotte.ttf","FontSize"=>11));
 		$myPicture->drawText(35,115,"Score",array("R"=>255,"G"=>255,"B"=>255,"FontSize"=>20,"Angle"=>90,"Align"=>TEXT_ALIGN_BOTTOMMIDDLE));
 	       
 		/* Prepare the chart area */
-		$myPicture->setGraphArea(100,30,1180,590);
-		$myPicture->drawFilledRectangle(100,30,1180,590,array("R"=>255,"G"=>255,"B"=>255,"Alpha"=>20));
+		$myPicture->setGraphArea(100,30,700,290);
+		$myPicture->drawFilledRectangle(100,30,700,290,array("R"=>255,"G"=>255,"B"=>255,"Alpha"=>20));
 		$myPicture->setFontProperties(array("R"=>255,"G"=>255,"B"=>255,"FontName"=>"../fonts/pf_arma_five.ttf","FontSize"=>6));
 		$myPicture->drawScale(array("AxisR"=>255,"AxisG"=>255,"AxisB"=>255,"DrawSubTicks"=>TRUE,"CycleBackground"=>TRUE));
 	       
