@@ -115,10 +115,10 @@ if(isset($_GET['su']))
 		$myPicture->drawGradientArea(0,0,60,330,DIRECTION_HORIZONTAL,array("StartR"=>0,"StartG"=>0,"StartB"=>0,"EndR"=>50,"EndG"=>50,"EndB"=>50,"Alpha"=>100));
 	       
 		/* Do some cosmetics */
-		$myPicture->drawLine(60,0,60,230,array("R"=>70,"G"=>70,"B"=>70));
-		$myPicture->drawRectangle(0,0,700,229,array("R"=>0,"G"=>0,"B"=>0));
-		$myPicture->setFontProperties(array("FontName"=>"../fonts/Forgotte.ttf","FontSize"=>11));
-		$myPicture->drawText(35,115,"Score",array("R"=>255,"G"=>255,"B"=>255,"FontSize"=>20,"Angle"=>90,"Align"=>TEXT_ALIGN_BOTTOMMIDDLE));
+		#$myPicture->drawLine(60,0,60,230,array("R"=>70,"G"=>70,"B"=>70));
+		#$myPicture->drawRectangle(0,0,700,229,array("R"=>0,"G"=>0,"B"=>0));
+		#$myPicture->setFontProperties(array("FontName"=>"../fonts/Forgotte.ttf","FontSize"=>11));
+		#$myPicture->drawText(35,115,"Score",array("R"=>255,"G"=>255,"B"=>255,"FontSize"=>20,"Angle"=>90,"Align"=>TEXT_ALIGN_BOTTOMMIDDLE));
 	       
 		/* Prepare the chart area */
 		$myPicture->setGraphArea(100,30,700,290);
@@ -138,7 +138,7 @@ if(isset($_GET['su']))
 		$myPicture->writeBounds();
 	       
 		/* Write the chart legend */ 
-		$myPicture->drawLegend(100,615,array("Style"=>LEGEND_NOBORDER,"Mode"=>LEGEND_HORIZONTAL));
+		$myPicture->drawLegend(100,215,array("Style"=>LEGEND_NOBORDER,"Mode"=>LEGEND_HORIZONTAL));
 	       
 		/* Render the picture (choose the best way) */
 		$myPicture->autoOutput("pictures/example.drawThreshold.labels.png");
