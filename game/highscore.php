@@ -15,7 +15,7 @@ require('mySQLconnect.php');
             {
                 echo '<td align="right" valign="top">';
             }
-            if($counter == 5)
+            if($counter == 6)
             {
                 echo '</td>';
                 echo '<td align="right" valign="top">';
