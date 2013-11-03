@@ -57,29 +57,8 @@ if (!$_SESSION['loggedIn']):
 //}
 
 ?>
-
-
-  <!--<body>-->
-<!--	    <tr>
-            <td>-->
 	    <form method="post">
-<!--            <table>
-		<tr>
-		    <td>
-                        
-                    </td>
-                </tr>
-                <tr>
-		    <td>
-                        
-                    </td>
-                </tr>
-            </table>-->
             <table >
-<!--                <tr>
-		    <td>
-                    </td>
-                </tr>-->
                 <tr>
                     <td>
                         User: 
@@ -92,8 +71,6 @@ if (!$_SESSION['loggedIn']):
                         <td>
                             <input type="password" name="password" size="5px">
                         </td>
-                <!--</tr>
-                <tr>-->
                 <td>
                     
                 </td>
@@ -106,14 +83,8 @@ if (!$_SESSION['loggedIn']):
                     </td>
                 </tr>
             </table>
-<!--        </td>
-    </tr>
-</table>-->
 </form>
-<!--  </body>
-</html>-->
 <?php
-#exit();
 endif;
 
 if ($_SESSION['loggedIn']):
