@@ -1,6 +1,6 @@
 <?PHP
 require('mySQLconnect.php');
-$typeint = rand(1, 2);
+$typeint = rand(1, 4);
 
 if($typeint == '1')
 {
@@ -121,11 +121,123 @@ if($typeint == '2')
 }
 if($typeint == '3')
 {
-    $type = 'commandsadv';
+    
+    $type = 'osi';
+    
+        
+    $query = "SELECT count(*) as COUNT FROM osi";
+    $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
+    while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+    {
+        $commandcount= $line['COUNT'];
+    }
+    
+    $commandselection = rand(1, $commandcount);
+    
+    $query = "SELECT * FROM osi where osiid='".$commandselection."'";
+    $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
+    while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+    {
+        $answer= $line['answer'];
+        $question= $line['question'];
+    }
+    
+    $query = "SELECT answer FROM osi where osiid != '".$commandselection."' ORDER BY RAND() LIMIT 7";
+    $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
+    while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+    {
+        $answers[]= $line['answer'];
+    }
+    
+    $a= $answers['1'];
+    $b= $answers['2'];
+    $c= $answers['3'];
+    $d= $answers['4'];
+    $e= $answers['5'];
+    $f= $answers['6'];
+    
+    $correctint = rand(1, 6);
+    
+    switch ($correctint) {
+        case 1:
+            $a = $answer;
+            break;
+        case 2:
+            $b = $answer;
+            break;
+        case 3:
+            $c = $answer;
+            break;
+        case 4:
+            $d = $answer;
+            break;
+        case 5:
+            $e = $answer;
+            break;
+        case 6:
+            $f = $answer;
+            break;   
+    } 
 }
 if($typeint == '4')
 {
-    $type = 'networking';
+    $type = 'reverseosi';
+    
+    $query = "SELECT count(*) as COUNT FROM osi";
+    $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
+    while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+    {
+        $commandcount= $line['COUNT'];
+    }
+    
+    $commandselection = rand(1, $commandcount);
+    
+    $query = "SELECT * FROM osi where osiid='".$commandselection."'";
+    $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
+    while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+    {
+        $answer= $line['question'];
+        $question= $line['answer'];
+        $explanation = $line['explanation']
+    }
+    
+    $query = "SELECT question FROM osi where osiid != '".$commandselection."' ORDER BY RAND() LIMIT 7";
+    $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
+    while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+    {
+        $answers[]= $line['question'];
+    }
+    
+    $a= $answers['1'];
+    $b= $answers['2'];
+    $c= $answers['3'];
+    $d= $answers['4'];
+    $e= $answers['5'];
+    $f= $answers['6'];
+    
+    $correctint = rand(1, 6);
+    
+    switch ($correctint) {
+        case 1:
+            $a = $answer;
+            break;
+        case 2:
+            $b = $answer;
+            break;
+        case 3:
+            $c = $answer;
+            break;
+        case 4:
+            $d = $answer;
+            break;
+        case 5:
+            $e = $answer;
+            break;
+        case 6:
+            $f = $answer;
+            break;   
+    } 
+    
 }
 if($typeint == '5')
 {
@@ -139,4 +251,6 @@ if($typeint == '5')
 //    $d = 'd';
 //    $e = 'e';
 //    $f = 'f';
+#$type = 'commandsadv';
+#$type = 'networking';
 ?>

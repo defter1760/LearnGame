@@ -11,6 +11,14 @@ if($type == 'reversecommand')
 {
     echo 'Choose the correct command: "'.$question.'" ?';
 }
+if($type == 'osi')
+{
+    echo '"'.$question.'"';
+}
+if($type == 'reverseosi')
+{
+    echo 'Choose the correct layer: "'.$explanation.'" ?';
+}
 echo '<form method=post>';
     echo 'A) ';
     echo '<input type=hidden name=type value="'.$type.'">';
