@@ -106,7 +106,7 @@ echo '<table border=2 width="995px">';
         echo '</td>';
     echo '</tr>';
 echo '</table>';
-echo 'Learn some Systems Administration stuff while playing a game!';
+echo 'Learn some Systems Administration stuff while playing a game! Study for the Red Hat Certified System Administrator (RHCSA) and Red Hat Certified Engineer (RHCE).';
 ?>
 </body>
 </html>
