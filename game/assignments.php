@@ -198,7 +198,7 @@ if($typeint == '4')
     {
         $answer= $line['question'];
         $question= $line['answer'];
-        $explanation = $line['explanation']
+        $explanation = $line['explanation'];
     }
     
     $query = "SELECT question FROM osi where osiid != '".$commandselection."' ORDER BY RAND() LIMIT 7";
