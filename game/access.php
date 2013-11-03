@@ -67,6 +67,10 @@ if (!$_SESSION['loggedIn']):
                     <td>
                         <input type="password" name="username" size="5px">
                     </td>
+		    <td>
+		    </td>
+		</tr>
+		<tr>
                     <td>
                         Pass:
                         <td>
