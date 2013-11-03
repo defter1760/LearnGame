@@ -5,7 +5,7 @@ require('mySQLconnect.php');
     echo '<table border=1>';
         echo '<tr>';
             
-        $query = "SELECT username, score FROM userdata ORDER BY score DESC LIMIT 10;";
+        $query = "SELECT username, score FROM userdata ORDER BY score DESC LIMIT 30;";
         $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
         
         while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
@@ -28,7 +28,9 @@ require('mySQLconnect.php');
             if($counter == 10)
             {
                 echo '</td>';
+                $counter = 0;
             }
+            
         }
     echo '</tr>';
 echo '</table>';
