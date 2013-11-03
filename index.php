@@ -24,6 +24,7 @@ echo '<table border=2 width="995px">';
     echo '<tr height="50px">';
         echo '<td width="50px">';
             #echo '<a href="http://in0.us/LearnGame?review=1">[review]</a> <a href="http://in0.us/LearnGame/">[game]</a>';
+            echo 'Highscores:';
         echo '</td>';
         echo '<td>';
             require('./game/highscore.php');
@@ -33,17 +34,6 @@ echo '<table border=2 width="995px">';
             #echo '[Login] [User] [*Pass]';
         echo '</td>';
     echo '</tr>';
-    //echo '<tr height="90px">';
-    //        echo '<td>';
-    //        echo '</td>';
-    //        echo '<td>';
-    //            #echo '[highscores]';
-    //        echo '</td>';
-    //        echo '<td >';
-    //        echo '</td>';
-    //echo '</tr>';
-    echo '</tr>';
-
             $underint = rand(1, 5);
             if($underint == '3')
             {
@@ -57,9 +47,6 @@ echo '<table border=2 width="995px">';
                     echo '</td>';
                 echo '</tr>';
             }
-                #echo '[ad]';
-
-    //echo '</tr>';
         echo '<tr height="600px">';
             echo '<td>';
             echo '</td>';
@@ -78,11 +65,9 @@ echo '<table border=2 width="995px">';
             if($underint3 == '1')
             {
                 require('./ads/LGRightBar.php');
-            }            
-                #echo '[ad]';            
+            }                        
             echo '</td>';
     echo '</tr>';
-    #echo '</tr>';
 
             $underint2 = rand(1, 3);
             if($underint2 == '2')
@@ -97,7 +82,7 @@ echo '<table border=2 width="995px">';
                     echo '</td>';
                 echo '</tr>';
             }
-                #echo '[ad]';
+
 
     echo '<tr>';
         echo '<td>';
@@ -121,6 +106,7 @@ echo '<table border=2 width="995px">';
         echo '</td>';
     echo '</tr>';
 echo '</table>';
+echo 'Learn some Systems Administration stuff while playing a game!';
 ?>
 </body>
 </html>
