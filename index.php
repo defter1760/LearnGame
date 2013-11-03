@@ -43,21 +43,23 @@ echo '<table border=2 width="995px">';
     //        echo '</td>';
     //echo '</tr>';
     echo '</tr>';
-        echo '<tr height="90px">';
-            echo '<td>';
-            echo '</td>';
-            echo '<td>';
+
             $underint = rand(1, 5);
             if($underint == '3')
             {
-                require('./ads/LGUnderHS.php');
+                echo '<tr height="90px">';
+                    echo '<td>';
+                    echo '</td>';
+                    echo '<td>';
+                        require('./ads/LGUnderHS.php');
+                    echo '</td>';
+                    echo '<td >';
+                    echo '</td>';
+                echo '</tr>';
             }
                 #echo '[ad]';
-            echo '</td>';
-            echo '<td >';
-            echo '</td>';
-    echo '</tr>';
-    echo '</tr>';
+
+    //echo '</tr>';
         echo '<tr height="600px">';
             echo '<td>';
             echo '</td>';
