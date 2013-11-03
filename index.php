@@ -21,12 +21,12 @@ require('./game/head.php');
 //echo date('M').' '.date('d').' '.date('Y');
 
 echo '<table border=2 width="995px">';
-    echo '<tr>';
+    echo '<tr height="50px">';
         echo '<td width="50px">';
             #echo '<a href="http://in0.us/LearnGame?review=1">[review]</a> <a href="http://in0.us/LearnGame/">[game]</a>';
         echo '</td>';
         echo '<td>';
-            echo '[highscores]';
+            require('./game/highscore.php');
         echo '</td>';
         echo '<td width="215px">';
             require('./game/access.php');
