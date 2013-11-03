@@ -33,6 +33,28 @@ if($submitted_type == 'reversecommand')
         $truedescription= $line['command'];
     }
 }
+
+if($submitted_type == 'reverseosi')
+{
+    $query = "SELECT question FROM osi where answer='".$submitted_question."'";
+    $result = mysql_query($query) or die('Query failed: ' . mysql_error());
+    
+    while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+    {
+        $truedescription= $line['question'];
+    }
+}
+if($submitted_type == 'osi')
+{
+    $query = "SELECT answer FROM osi where question='".$submitted_question."'";
+    $result = mysql_query($query) or die('Query failed: ' . mysql_error());
+    
+    while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+    {
+        $truedescription= $line['answer'];
+    }
+}
+
 if(isset($submitted_type))
 {
 
