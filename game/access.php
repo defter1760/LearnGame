@@ -80,7 +80,7 @@ if (!$_SESSION['loggedIn']):
                     
                 </td>
                     <td align=right>
-                        <input style="login" type="submit" name="submit" value="Login">   
+                        <input style="login" type="submit" name="submit" value="Login or Register">   
                     </td>
                 </tr>
                          
