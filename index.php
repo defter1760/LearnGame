@@ -82,21 +82,23 @@ echo '<table border=2 width="995px">';
                 #echo '[ad]';            
             echo '</td>';
     echo '</tr>';
-    echo '</tr>';
-        echo '<tr height="90px">';
-            echo '<td>';
-            echo '</td>';
-            echo '<td>';
+    #echo '</tr>';
+
             $underint2 = rand(1, 3);
             if($underint2 == '2')
             {
-                require('./ads/LGUnderGame.php');
+                echo '<tr height="90px">';
+                    echo '<td>';
+                    echo '</td>';
+                    echo '<td>';
+                        require('./ads/LGUnderGame.php');
+                    echo '</td>';
+                    echo '<td >';
+                    echo '</td>';
+                echo '</tr>';
             }
                 #echo '[ad]';
-            echo '</td>';
-            echo '<td >';
-            echo '</td>';
-    echo '</tr>';
+
     echo '<tr>';
         echo '<td>';
         echo '</td>';
