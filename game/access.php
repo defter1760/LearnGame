@@ -107,7 +107,7 @@ if ($_SESSION['loggedIn']):
                 <tr>
                     <td>
                         <?PHP
-			    echo 'Logged in as: <b>'.$_SESSION['UserName'].'</b> [ '.$oldscore.' ]';
+			    echo 'Logged in: <b>'.$_SESSION['UserName'].'</b> [ '.$oldscore.' ]';
 			?>
                     </td>
                 </tr>
