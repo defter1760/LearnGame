@@ -1,5 +1,5 @@
 <?PHP
-echo '##Highscores';
+#echo '##Highscores';
 require('mySQLconnect.php');
     $counter = 0;
     echo '<table border=1>';
@@ -20,7 +20,9 @@ require('mySQLconnect.php');
                 echo '</td>';
                 echo '<td align="right" valign="top">';
             }
+            echo '<strong style="font-size: 10px;">';
             echo $line['username'].' [ '.$line['score'].' ]<br>';
+            echo '</strong>';
             #$topusers[]= $line['username'];
             #$topscores[]= $line['score'];
             if($counter == 10)
