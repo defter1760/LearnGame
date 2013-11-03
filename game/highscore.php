@@ -13,12 +13,12 @@ require('mySQLconnect.php');
             $counter +=1;
             if($counter == 1)
             {
-                echo '<td>';
+                echo '<td align="right" valign="top">';
             }
             if($counter == 5)
             {
                 echo '</td>';
-                echo '<td>';
+                echo '<td align="right" valign="top">';
             }
             echo $line['username'].' [ '.$line['score'].' ]<br>';
             #$topusers[]= $line['username'];
