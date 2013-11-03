@@ -30,5 +30,5 @@ require('mySQLconnect.php');
         }
     echo '</tr>';
 echo '</table>';
-
+print_r($line);
 ?>
