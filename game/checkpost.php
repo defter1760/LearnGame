@@ -2,9 +2,19 @@
 require('mySQLconnect.php');
 #echo 'checkpost';
 #print_r($_POST);
+function escape($str)
+         {
+                 $search=array("\\","\0","\n","\r","\x1a","'",'"');
+                 $replace=array("\\\\","\\0","\\n","\\r","\Z","\'",'\"');
+                 return str_replace($search,$replace,$str);
+         }
 $submitted_type = $_POST['type'];
 $submitted_answer = $_POST['answer'];
 $submitted_question = $_POST['question'];
+$submitted_type = escape($submitted_type);
+$submitted_answer = escape($submitted_answer);
+$submitted_question = escape($submitted_question);
+
 $date = date('Y').'-'.date('m').'-'.date('d');
 if(empty($submitted_type))
 {
