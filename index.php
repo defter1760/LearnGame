@@ -51,14 +51,20 @@ echo '<table border=0 width="995px">';
             echo '<td>';
             echo '</td>';
             echo '<td valign="top">';
-            if($_GET['review'] == '1')
-            {
-                require('./game/review.php');
-            }
-            else
-            {
-                require('./game/main.php');  
-            }
+            echo '<table style="border:solid 2px" border="2">';
+                echo '<tr>';
+                    echo "<td>";
+                        if($_GET['review'] == '1')
+                        {
+                            require('./game/review.php');
+                        }
+                        else
+                        {
+                            require('./game/main.php');  
+                        }
+                    echo '</td>';
+                echo '</tr>';
+            echo '</table>';
             echo '</td>';
             echo '<td >';
             $underint3 = rand(1, 2);
