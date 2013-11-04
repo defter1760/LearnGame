@@ -153,7 +153,7 @@ a.schedule:active {color:#000;}  /* selected link */
             <td>
                 <h3>
                     <a href="http://in0.us/LearnGame/">Game</a>
-                    <a href="http://in0.us/LearnGame?review=1&choice=1">Review</a>
+        <?PHP #echo '<a href="http://in0.us/LearnGame?review=1&choice=1">Review</a>'; ?>
                     <a href=http://in0.us/LearnGame/logout.php>Log out</a>
                 </h3>
             </td>
