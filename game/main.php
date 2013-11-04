@@ -19,6 +19,15 @@ if($type == 'reverseosi')
 {
     echo 'Choose the correct layer: "'.$explanation.'" ?';
 }
+
+if($type == 'ports')
+{
+    echo 'Port "'.$question.'"';
+}
+if($type == 'reverseports')
+{
+    echo 'Choose the correct port: "'.$question.'" ?';
+}
 echo '<form method=post>';
     echo 'A) ';
     echo '<input type=hidden name=type value="'.$type.'">';
