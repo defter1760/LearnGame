@@ -92,7 +92,7 @@ if($submitted_type == 'reversesubnets')
     
     while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
     {
-        $truedescription= $line['answer'];
+        $truedescription= $line['question'];
     }
 }
 if($submitted_type == 'subnetmasks')
@@ -102,7 +102,7 @@ if($submitted_type == 'subnetmasks')
     
     while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
     {
-        $truedescription= $line['answer'];
+        $truedescription= $line['netmask'];
     }
 }
 if(isset($submitted_type))
