@@ -22,11 +22,11 @@ if($type == 'reverseosi')
 
 if($type == 'ports')
 {
-    echo 'Port "'.$question.'"';
+    echo 'Which port does "'.$question.'" use?';
 }
 if($type == 'reverseports')
 {
-    echo 'Choose the correct port: "'.$question.'" ?';
+    echo 'Which service uses port "'.$question.'" ?';
 }
 echo '<form method=post>';
     echo 'A) ';
