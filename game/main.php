@@ -13,7 +13,7 @@ if($type == 'reversecommand')
 }
 if($type == 'osi')
 {
-    echo '"'.$question.'"';
+    echo 'Which layer is the "'.$question.'" layer?';
 }
 if($type == 'reverseosi')
 {
@@ -36,7 +36,7 @@ if($type == 'reversesubnets')
 {
     echo 'Which CIDR network type has "'.$question.'" addresses ('.($question - 2).' hosts) ?';
 }
-if($type == 'subnetmask')
+if($type == 'subnetmasks')
 {
     echo 'Which netmask does a "'.$question.' CIDR network require?" ?';
 }
