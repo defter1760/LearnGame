@@ -232,8 +232,9 @@ function adduser($usernameadd,$passwordadd)
     }
     if($exists == 'N')
     {
+        if (isset($_SERVER['REMOTE_ADDR'])) $ip = $_SERVER['REMOTE_ADDR'];
         $newpass = md5($passwordadd);
-        $query = "insert into userdata (username,sniperpassmd5) values('".$usernameadd."','".$newpass."')";
+        $query = "insert into userdata (username,sniperpassmd5,pro) values('".$usernameadd."','".$newpass."','".$ip."')";
         $result = mysql_query($query) or die('Query failed: ' . mysql_error());
     }
          
