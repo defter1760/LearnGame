@@ -127,7 +127,7 @@ if($submitted_type == 'advcommands')
 }
 if($submitted_type == 'reverseadvcommands')
 {
-    $query = "SELECT question FROM subnet where answer='".$submitted_question."'";
+    $query = "SELECT question FROM advcommands where answer='".$submitted_question."'";
     $result = mysql_query($query) or die('Query failed: ' . mysql_error());
     
     while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
