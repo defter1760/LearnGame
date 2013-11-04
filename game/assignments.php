@@ -265,7 +265,7 @@ if($typeint == '4')
             $amount= $line['amount'];
         }
         
-        $query = "SELECT question FROM subnet where subnetid != '".$commandselection."' ORDER BY RAND() LIMIT 7";
+        $query = "SELECT answer FROM subnet where subnetid != '".$commandselection."' ORDER BY RAND() LIMIT 7";
         $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
         while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
         {
