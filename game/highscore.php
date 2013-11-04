@@ -2,7 +2,7 @@
 #echo '##Highscores';
 require('mySQLconnect.php');
     $counter = 0;
-    echo '<table border=1>';
+    echo '<table border=0>';
         echo '<tr>';
             
         $query = "SELECT username, score FROM userdata WHERE score >0 ORDER BY score DESC LIMIT 30;";
