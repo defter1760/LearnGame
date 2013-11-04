@@ -28,6 +28,18 @@ if($type == 'reverseports')
 {
     echo 'Which service uses port "'.$question.'" ?';
 }
+if($type == 'subnets')
+{
+    echo 'How many addresses does a "'.$question.'" network have?';
+}
+if($type == 'reversesubnets')
+{
+    echo 'Which network type has "'.$question.'" addresses ('.$question-2.' hosts) ?';
+}
+if($type == 'subnetmask')
+{
+    echo 'Which netmask does a "'.$question.' network require?" ?';
+}
 echo '<form method=post>';
     echo 'A) ';
     echo '<input type=hidden name=type value="'.$type.'">';

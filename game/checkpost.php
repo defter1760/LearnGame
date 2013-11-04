@@ -74,6 +74,37 @@ if($submitted_type == 'ports')
         $truedescription= $line['answer'];
     }
 }
+
+if($submitted_type == 'subnets')
+{
+    $query = "SELECT answer FROM subnet where question='".$submitted_question."'";
+    $result = mysql_query($query) or die('Query failed: ' . mysql_error());
+    
+    while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+    {
+        $truedescription= $line['answer'];
+    }
+}
+if($submitted_type == 'reversesubnets')
+{
+    $query = "SELECT question FROM subnet where answer='".$submitted_question."'";
+    $result = mysql_query($query) or die('Query failed: ' . mysql_error());
+    
+    while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+    {
+        $truedescription= $line['answer'];
+    }
+}
+if($submitted_type == 'subnetmasks')
+{
+    $query = "SELECT netmask FROM subnet where question='".$submitted_question."'";
+    $result = mysql_query($query) or die('Query failed: ' . mysql_error());
+    
+    while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+    {
+        $truedescription= $line['answer'];
+    }
+}
 if(isset($submitted_type))
 {
 
