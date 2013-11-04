@@ -34,8 +34,8 @@ echo '<table border=0 width="995px">';
             #echo '[Login] [User] [*Pass]';
         echo '</td>';
     echo '</tr>';
-            $underint = rand(1, 5);
-            if($underint == '3')
+            $underint = rand(1, 2);
+            if($underint == '1')
             {
                 echo '<tr height="90px">';
                     echo '<td>';
@@ -75,7 +75,7 @@ echo '<table border=0 width="995px">';
             echo '</td>';
     echo '</tr>';
 
-            $underint2 = rand(1, 3);
+            $underint2 = rand(1, 2);
             if($underint2 == '2')
             {
                 echo '<tr height="90px">';
