@@ -631,7 +631,7 @@ if($typeint == '5')
             $question= $line['answer'];
         }
         
-        $query = "SELECT question FROM advcommands where osiid != '".$commandselection."' ORDER BY RAND() LIMIT 7";
+        $query = "SELECT question FROM advcommands where advcommandid != '".$commandselection."' ORDER BY RAND() LIMIT 7";
         $result = mysql_query($query) or die('Query failed: ' . mysql_error());    
         while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
         {
