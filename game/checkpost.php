@@ -36,7 +36,7 @@ if($submitted_type == 'reversecommand')
 
 if($submitted_type == 'reverseosi')
 {
-    $query = "SELECT question FROM osi where explanation='".$submitted_question."'";
+    $query = "SELECT question FROM osi where answer='".$submitted_question."'";
     $result = mysql_query($query) or die('Query failed: ' . mysql_error());
     
     while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
