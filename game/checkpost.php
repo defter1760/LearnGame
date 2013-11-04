@@ -112,7 +112,7 @@ if($submitted_type == 'advcommands')
     
     while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
     {
-        $truedescription= $line['netmask'];
+        $truedescription= $line['answer'];
     }
 }
 if($submitted_type == 'reverseadvcommands')
@@ -122,7 +122,7 @@ if($submitted_type == 'reverseadvcommands')
     
     while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
     {
-        $truedescription= $line['netmask'];
+        $truedescription= $line['question'];
     }
 }
 
