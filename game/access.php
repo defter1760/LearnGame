@@ -1,9 +1,8 @@
 <?php
 require('mySQLconnect.php');
 require('functions.php');
-if(session_id() == '') {
-    session_start();
-}
+session_start();
+
 if (!isset($_SESSION['loggedIn']))
 {
     $_SESSION['loggedIn'] = false;
