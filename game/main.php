@@ -30,15 +30,15 @@ if($type == 'reverseports')
 }
 if($type == 'subnets')
 {
-    echo 'How many addresses does a "'.$question.'" network have?';
+    echo 'How many addresses does a "'.$question.'" CIDR network have?';
 }
 if($type == 'reversesubnets')
 {
-    echo 'Which network type has "'.$question.'" addresses ('.($question - 2).' hosts) ?';
+    echo 'Which CIDR network type has "'.$question.'" addresses ('.($question - 2).' hosts) ?';
 }
 if($type == 'subnetmask')
 {
-    echo 'Which netmask does a "'.$question.' network require?" ?';
+    echo 'Which netmask does a "'.$question.' CIDR network require?" ?';
 }
 echo '<form method=post>';
     echo 'A) ';
