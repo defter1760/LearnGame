@@ -51,7 +51,7 @@ echo '<table border=0 width="995px">';
             echo '<td>';
             echo '</td>';
             echo '<td valign="top">';
-            echo '<table style="border:solid 2px" border="2">';
+            echo '<table style="border:solid 2px" border="2" width="100%">';
                 echo '<tr>';
                     echo "<td>";
                         if($_GET['review'] == '1')
