@@ -34,7 +34,7 @@ if($type == 'subnets')
 }
 if($type == 'reversesubnets')
 {
-    echo 'Which network type has "'.$question.'" addresses ('.$question-2.' hosts) ?';
+    echo 'Which network type has "'.$question.'" addresses ('.($question - 2).' hosts) ?';
 }
 if($type == 'subnetmask')
 {
