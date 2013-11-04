@@ -105,6 +105,27 @@ if($submitted_type == 'subnetmasks')
         $truedescription= $line['netmask'];
     }
 }
+if($submitted_type == 'advcommands')
+{
+    $query = "SELECT answer FROM advcommands where question='".$submitted_question."'";
+    $result = mysql_query($query) or die('Query failed: ' . mysql_error());
+    
+    while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+    {
+        $truedescription= $line['netmask'];
+    }
+}
+if($submitted_type == 'reverseadvcommands')
+{
+    $query = "SELECT question FROM subnet where answer='".$submitted_question."'";
+    $result = mysql_query($query) or die('Query failed: ' . mysql_error());
+    
+    while ($line = mysql_fetch_array($result, MYSQL_ASSOC))
+    {
+        $truedescription= $line['netmask'];
+    }
+}
+
 if(isset($submitted_type))
 {
 

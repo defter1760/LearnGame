@@ -40,6 +40,14 @@ if($type == 'subnetmasks')
 {
     echo 'Which netmask does a "'.$question.' CIDR network require?" ?';
 }
+if($type == 'advcommands')
+{
+    echo 'What should "'.$question.' do?" ?';
+}
+if($type == 'reverseadvcommands')
+{
+    echo 'If you want to "'.$question.' which should I use?" ?';
+}
 echo '<form method=post>';
     echo 'A) ';
     echo '<input type=hidden name=type value="'.$type.'">';
