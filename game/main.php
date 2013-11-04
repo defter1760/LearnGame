@@ -13,7 +13,7 @@ if($type == 'reversecommand')
 }
 if($type == 'osi')
 {
-    echo 'Which layer is the "'.$question.'" layer?';
+    echo 'Which layer is "'.$question.'"?';
 }
 if($type == 'reverseosi')
 {
