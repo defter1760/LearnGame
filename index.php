@@ -18,6 +18,14 @@ if($_SERVER['REMOTE_ADDR'] == '75.115.139.95')
 {
     $banned = 'y';
 }
+if($_SERVER['REMOTE_ADDR'] == '204.8.156.142')
+{
+    $banned = 'y';
+}
+if($_SERVER['REMOTE_ADDR'] == '83.244.243.210')
+{
+    $banned = 'y';
+}
 require('./game/head.php');
 
 #require('style.php');
