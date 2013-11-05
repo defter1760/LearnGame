@@ -14,6 +14,10 @@
     </style>
     <body>
 <?PHP
+if($_SERVER['REMOTE_ADDR'] == '75.115.139.95')
+{
+    $banned = 'y';
+}
 require('./game/head.php');
 
 #require('style.php');
@@ -30,7 +34,13 @@ echo '<table border=0 width="995px">';
             require('./game/highscore.php');
         echo '</td>';
         echo '<td width="215px">';
+        if($banned == 'y')
+        {}
+        else
+        {
             require('./game/access.php');
+        }
+            
             #echo '[Login] [User] [*Pass]';
         echo '</td>';
     echo '</tr>';
